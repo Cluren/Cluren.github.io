@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Cluren&#39;s blogs</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://cluren.github.io/"/>
+  <updated>2020-11-18T04:52:33.154Z</updated>
+  <id>https://cluren.github.io/</id>
+  
+  <author>
+    <name>cluren</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pikachu靶场——基于表单的暴力破解及Intruder模块的简单介绍</title>
+    <link href="https://cluren.github.io/2020/11/18/pikachubaopo/"/>
+    <id>https://cluren.github.io/2020/11/18/pikachubaopo/</id>
+    <published>2020-11-18T04:14:37.000Z</published>
+    <updated>2020-11-18T04:52:33.154Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;本文以pikachu靶场作为演示简单介绍了Burpsuit的Intruder模块&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+      <category term="练习" scheme="https://cluren.github.io/categories/%E7%BB%83%E4%B9%A0/"/>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="靶场" scheme="https://cluren.github.io/tags/%E9%9D%B6%E5%9C%BA/"/>
+    
+      <category term="pikachu" scheme="https://cluren.github.io/tags/pikachu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python调用Metasploit实现自动化漏洞利用</title>
+    <link href="https://cluren.github.io/2020/06/07/pymetasploit/"/>
+    <id>https://cluren.github.io/2020/06/07/pymetasploit/</id>
+    <published>2020-06-07T13:12:31.903Z</published>
+    <updated>2020-10-17T11:20:34.647Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;这里介绍两种使用python来操控metasploit的方法，一种是python调用系统命令来实现，另一只是使用pymetasploit3库来实现。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="Python" scheme="https://cluren.github.io/tags/Python/"/>
+    
+      <category term="Metasploit" scheme="https://cluren.github.io/tags/Metasploit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>四叶草四校友谊赛CTF记录</title>
+    <link href="https://cluren.github.io/2020/04/26/siyecaoyouyisai/"/>
+    <id>https://cluren.github.io/2020/04/26/siyecaoyouyisai/</id>
+    <published>2020-04-26T03:11:53.139Z</published>
+    <updated>2020-10-17T11:20:34.651Z</updated>
+    
+    <summary type="html">
+    
+      CTF writeup
+    
+    </summary>
+    
+    
+      <category term="CTF" scheme="https://cluren.github.io/categories/CTF/"/>
+    
+    
+      <category term="writeup" scheme="https://cluren.github.io/tags/writeup/"/>
+    
+      <category term="CTF" scheme="https://cluren.github.io/tags/CTF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python-nmap模块报错解决办法</title>
+    <link href="https://cluren.github.io/2020/04/21/py-nmapbaocuo/"/>
+    <id>https://cluren.github.io/2020/04/21/py-nmapbaocuo/</id>
+    <published>2020-04-21T13:52:08.137Z</published>
+    <updated>2020-10-17T11:20:34.098Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Python-nmap模块报错解决办法&quot;&gt;&lt;a href=&quot;#Python-nmap模块报错解决办法&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://cluren.github.io/categories/Python/"/>
+    
+    
+      <category term="排错" scheme="https://cluren.github.io/tags/%E6%8E%92%E9%94%99/"/>
+    
+      <category term="Python" scheme="https://cluren.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对渗透新人成长的建议（转载）</title>
+    <link href="https://cluren.github.io/2020/03/22/xinshoujianyi/"/>
+    <id>https://cluren.github.io/2020/03/22/xinshoujianyi/</id>
+    <published>2020-03-22T12:31:22.809Z</published>
+    <updated>2020-10-17T11:20:34.659Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;对渗透新人成长的建议&quot;&gt;&lt;a href=&quot;#对渗透新人成长的建议&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hydra/Medusa爆破工具实操</title>
+    <link href="https://cluren.github.io/2020/03/22/baopo/"/>
+    <id>https://cluren.github.io/2020/03/22/baopo/</id>
+    <published>2020-03-22T07:47:19.858Z</published>
+    <updated>2020-10-17T11:20:34.093Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;0x01-hydra参数介绍&quot;&gt;&lt;a href=&quot;#0x01-hydra参数介绍&quot; class=&quot;headerlink&quot; title=&quot;0x01 hydra参数介绍&quot;&gt;&lt;/a&gt;0x01 hydra参数介绍&lt;/h2&gt;&lt;p&gt;hydra命令参数介绍:&lt;br&gt;   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="暴破" scheme="https://cluren.github.io/tags/%E6%9A%B4%E7%A0%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透信息收集整理（待补充）</title>
+    <link href="https://cluren.github.io/2020/03/21/xinxishouji/"/>
+    <id>https://cluren.github.io/2020/03/21/xinxishouji/</id>
+    <published>2020-03-21T14:18:27.243Z</published>
+    <updated>2020-10-17T11:20:34.662Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;常规信息收集&quot;&gt;&lt;a href=&quot;#常规信息收集&quot; class=&quot;headerlink&quot; title=&quot;常规信息收集&quot;&gt;&lt;/a&gt;常规信息收集&lt;/h2&gt;&lt;h3 id=&quot;利用搜索引擎搜集信息&quot;&gt;&lt;a href=&quot;#利用搜索引擎搜集信息&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="信息收集" scheme="https://cluren.github.io/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>合天WEB公开课考核CTF记录</title>
+    <link href="https://cluren.github.io/2020/03/08/hetianwebctf/"/>
+    <id>https://cluren.github.io/2020/03/08/hetianwebctf/</id>
+    <published>2020-03-08T06:59:01.881Z</published>
+    <updated>2020-10-17T11:20:34.096Z</updated>
+    
+    <summary type="html">
+    
+      CTF
+    
+    </summary>
+    
+    
+      <category term="CTF" scheme="https://cluren.github.io/categories/CTF/"/>
+    
+    
+      <category term="writeup" scheme="https://cluren.github.io/tags/writeup/"/>
+    
+      <category term="CTF" scheme="https://cluren.github.io/tags/CTF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>四叶草启航班考核CTF记录</title>
+    <link href="https://cluren.github.io/2020/02/27/siyecaoqihangkaohe/"/>
+    <id>https://cluren.github.io/2020/02/27/siyecaoqihangkaohe/</id>
+    <published>2020-02-27T15:39:29.270Z</published>
+    <updated>2020-10-17T11:20:34.649Z</updated>
+    
+    <summary type="html">
+    
+      CTF writeup
+    
+    </summary>
+    
+    
+      <category term="CTF" scheme="https://cluren.github.io/categories/CTF/"/>
+    
+    
+      <category term="writeup" scheme="https://cluren.github.io/tags/writeup/"/>
+    
+      <category term="CTF" scheme="https://cluren.github.io/tags/CTF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cobalt Strike 4.0第一节Operations笔记（转载）</title>
+    <link href="https://cluren.github.io/2020/02/20/cs1op/"/>
+    <id>https://cluren.github.io/2020/02/20/cs1op/</id>
+    <published>2020-02-20T14:14:37.000Z</published>
+    <updated>2020-10-17T11:20:34.094Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;这是cobalt strike 4.0官方教程的第一节笔记。看到别人写的直接转载了，自己懒得写了，下方是我自己传的视频。（英语水平及精力有限，错误之处欢迎在B站私信）&lt;/p&gt;
+&lt;iframe height=&quot;500&quot; width=&quot;700&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="工具" scheme="https://cluren.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="cobalt strike" scheme="https://cluren.github.io/tags/cobalt-strike/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker快速入门</title>
+    <link href="https://cluren.github.io/2020/02/19/docker-1/"/>
+    <id>https://cluren.github.io/2020/02/19/docker-1/</id>
+    <published>2020-02-19T14:16:21.350Z</published>
+    <updated>2020-10-17T11:20:34.095Z</updated>
+    
+    <summary type="html">
+    
+      docker的简单总结
+    
+    </summary>
+    
+    
+      <category term="Misc" scheme="https://cluren.github.io/categories/Misc/"/>
+    
+    
+      <category term="Docker" scheme="https://cluren.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQLmap Tamper编写（笔记）</title>
+    <link href="https://cluren.github.io/2020/01/20/sqlmaptamperbianxie/"/>
+    <id>https://cluren.github.io/2020/01/20/sqlmaptamperbianxie/</id>
+    <published>2020-01-20T13:14:37.000Z</published>
+    <updated>2020-10-17T11:20:34.654Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;0x00&quot;&gt;&lt;a href=&quot;#0x00&quot; class=&quot;headerlink&quot; title=&quot;0x00&quot;&gt;&lt;/a&gt;0x00&lt;/h2&gt;&lt;p&gt; &lt;code&gt;$ python sqlmap.py --list-tampers       
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="注入" scheme="https://cluren.github.io/tags/%E6%B3%A8%E5%85%A5/"/>
+    
+      <category term="sqlmap" scheme="https://cluren.github.io/tags/sqlmap/"/>
+    
+      <category term="bypass" scheme="https://cluren.github.io/tags/bypass/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python列表元组字符串相关操作</title>
+    <link href="https://cluren.github.io/2019/12/20/pycaozuo/"/>
+    <id>https://cluren.github.io/2019/12/20/pycaozuo/</id>
+    <published>2019-12-20T13:14:37.000Z</published>
+    <updated>2020-10-17T11:20:34.644Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;List操作&quot;&gt;&lt;a href=&quot;#List操作&quot; class=&quot;headerlink&quot; title=&quot;List操作&quot;&gt;&lt;/a&gt;List操作&lt;/h1&gt;&lt;h3 id=&quot;列表方法&quot;&gt;&lt;a href=&quot;#列表方法&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://cluren.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://cluren.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL注入常用函数及逻辑运算</title>
+    <link href="https://cluren.github.io/2019/10/23/mysqlzhurufun/"/>
+    <id>https://cluren.github.io/2019/10/23/mysqlzhurufun/</id>
+    <published>2019-10-23T14:14:37.000Z</published>
+    <updated>2020-10-17T11:20:34.097Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;MySQL注入常用函数：&quot;&gt;&lt;a href=&quot;#MySQL注入常用函数：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Misc" scheme="https://cluren.github.io/categories/Misc/"/>
+    
+    
+      <category term="注入" scheme="https://cluren.github.io/tags/%E6%B3%A8%E5%85%A5/"/>
+    
+      <category term="Mysql" scheme="https://cluren.github.io/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WAF介绍及常见绕过方法</title>
+    <link href="https://cluren.github.io/2019/10/23/wafjieshao/"/>
+    <id>https://cluren.github.io/2019/10/23/wafjieshao/</id>
+    <published>2019-10-23T14:14:37.000Z</published>
+    <updated>2020-10-17T11:20:34.656Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、WAF简介&quot;&gt;&lt;a href=&quot;#一、WAF简介&quot; class=&quot;headerlink&quot; title=&quot;一、WAF简介&quot;&gt;&lt;/a&gt;一、WAF简介&lt;/h1&gt;&lt;p&gt;  
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="WAF" scheme="https://cluren.github.io/tags/WAF/"/>
+    
+      <category term="Bypass" scheme="https://cluren.github.io/tags/Bypass/"/>
+    
+  </entry>
+  
+</feed>
