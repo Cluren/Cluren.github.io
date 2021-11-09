@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cluren.github.io/about/index.html</loc>
+    
+    <lastmod>2021-11-09T13:06:54.965Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://cluren.github.io/2021/02/18/wangdingbeifanxuliehua/</loc>
     
     <lastmod>2021-03-27T10:33:37.068Z</lastmod>
@@ -110,34 +117,6 @@
     <loc>https://cluren.github.io/2020/03/22/baopo/</loc>
     
     <lastmod>2020-10-17T11:20:34.093Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://cluren.github.io/links/index.html</loc>
-    
-    <lastmod>2020-04-20T09:12:36.941Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://cluren.github.io/tags/index.html</loc>
-    
-    <lastmod>2020-04-20T06:11:40.013Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://cluren.github.io/about/index.html</loc>
-    
-    <lastmod>2020-02-17T15:39:01.651Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://cluren.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-02-17T15:34:36.721Z</lastmod>
     
   </url>
   
