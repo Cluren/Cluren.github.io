@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cluren.github.io/"/>
-  <updated>2021-11-09T14:06:10.036Z</updated>
+  <updated>2021-11-11T13:41:58.340Z</updated>
   <id>https://cluren.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一次攻防演习中的近源尝试</title>
+    <link href="https://cluren.github.io/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/"/>
+    <id>https://cluren.github.io/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/</id>
+    <published>2021-11-11T13:38:59.216Z</published>
+    <updated>2021-11-11T13:41:58.340Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一次攻防演习中的近源尝试&quot;&gt;&lt;a href=&quot;#一次攻防演习中的近源尝试&quot; class=&quot;headerlink&quot; title=&quot;一次攻防演习中的近源尝试&quot;&gt;&lt;/a&gt;一次攻防演习中的近源尝试&lt;/h1&gt;&lt;h2 id=&quot;0x00-背景&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="攻防对抗" scheme="https://cluren.github.io/tags/%E6%94%BB%E9%98%B2%E5%AF%B9%E6%8A%97/"/>
+    
+      <category term="RedTeam" scheme="https://cluren.github.io/tags/RedTeam/"/>
+    
+  </entry>
   
   <entry>
     <title>每日一题：2020年网鼎杯反序列化题目AreUSerialz复现</title>
@@ -364,11 +395,11 @@
       <category term="渗透测试" scheme="https://cluren.github.io/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="注入" scheme="https://cluren.github.io/tags/%E6%B3%A8%E5%85%A5/"/>
-    
       <category term="sqlmap" scheme="https://cluren.github.io/tags/sqlmap/"/>
     
       <category term="bypass" scheme="https://cluren.github.io/tags/bypass/"/>
+    
+      <category term="注入" scheme="https://cluren.github.io/tags/%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   

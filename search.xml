@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>一次攻防演习中的近源尝试</title>
+      <link href="/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/"/>
+      <url>/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一次攻防演习中的近源尝试"><a href="#一次攻防演习中的近源尝试" class="headerlink" title="一次攻防演习中的近源尝试"></a>一次攻防演习中的近源尝试</h1><h2 id="0x00-背景"><a href="#0x00-背景" class="headerlink" title="0x00 背景"></a>0x00 背景</h2><p>前段时间参加了某市的一次攻防演练，分配到的目标暴露面较少，而且页面都是趋于静态的那种，最可恶的是某家医院直接关站。。。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213325.png" alt="image-20210727151402157"></p><p>以下文章主要记录本次过程的主要内容。</p><h2 id="0x01-准备工作"><a href="#0x01-准备工作" class="headerlink" title="0x01 准备工作"></a>0x01 准备工作</h2><p>由于第一天成果非常有限，因此准备去实地看看情况（在主办方允许近源的情况下），于是我们选择了关站的那家医院。</p><p>准备工具：由于是第一次，所以准备到的东西并不多，带了网线、USB无线网卡、U盘、自己的电脑、便携鼠标和键盘，还有口罩（除了防疫还可以遮住自己的脸不让保安注意到）。</p><p>准备利用的目标：第一件想到的就是wifi，如果能利用wifi进入核心生产区那最好了，还有就是挂号机等等的终端设备，以及暴露的网口，一些办公pc。</p><p>准备完毕就背上书包骑着小电动车出发了</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213503.png" alt="image-20210727112356785"></p><h2 id="0x02-现场的情况"><a href="#0x02-现场的情况" class="headerlink" title="0x02 现场的情况"></a>0x02 现场的情况</h2><p>首先通过保安的监视和测温进入门诊大楼，进门之后映入眼帘的就是一个导航大屏终端，于是准备先从他下手。</p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213536.png" alt="image-20210727142951549" style="zoom:80%;" /><p>首先观察环境情况，这台终端机是用来介绍医院的楼层、科室等信息的，在后边有电源开关、USB接口，网线口插着网线。通过简单的触摸操作发现这是台安卓系统的机器，于是通过手势操作划出了他的三大功能键，一不小心就跳出了沙盒。</p><p>左右观望了一下没有保安之后就开始收集他的信息，ip地址是100.*.*.*，是个安卓5的操作系统，无法访问互联网，看来网线接的是医院的内部网络，这也就意味着没法种马通过公网上线，于是想着通过连接wifi给他出网，正好医院有公共上网的wifi，做个双网卡的跳板机岂不美哉！但是很不巧，wifi是打开了，但是搜不到信号。。。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213552.png" alt="image-20210727112802414"></p><p>没事，不是后面有USB接口吗，不正好带了linux免驱的无线网卡吗，但是很不巧，插上他不显示网卡信息。（安卓这块使用外置无线网卡不太懂）于是暂且放弃，开始从wifi下手。</p><p>在门诊楼搜到的wifi是加密的，通过问询工作人员获得了密码，可以访问互联网，连接后获取到的ip是10开头的，跟那个终端机100开头的网络是互不相通的。于是开始探测wifi网络的内网资产。通过扫描探测找到内网资有大量的摄像头弱口令，部分打印机，也有少量的pc，以及三百多台交换机和路由器超级管理员（移动定制的网络设备出厂默认超级管理员账号/密码:CMCCAdmin /aDm8H%MdA），以及少量的ms17-010漏洞等。但是很不巧，这个wifi并不能找到医院核心生产资产。</p><p>于是又去了住院楼。同样，顺利通过了测温和保安大哥的监视。在这里又发现了另外一个wifi，连接后跳出认证页面，获取到的ip是172开头的，看来的电信做的访客wifi，给访客上网用的。但是很不巧，这个wifi内网没有我想要的东西，还没门诊楼拿到的东西多。wifi这块就先放一放，不是还有终端机吗。</p><p>于是，发现在住院楼同样有一台一模一样的安卓导航终端机，但是一想连不了wifi也没啥用啊，报着试试看的心态过去看了下，这台机器并没有插网线，而且他的wifi功能是好的，连接了一个加密的wifi，同样是100开头的ip，但是他不出网。那没事，连上公共wifi先上个线。</p><p>先连接能出网的wifi使其正常访问互联网。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213610.png" alt="image-20210727144453243"></p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213619.png" alt="image-20210727144500954"></p><p>再通过远程下载木马安装</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213631.png" alt="image-20210727144636736"></p><p>msf监听上线</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213645.png" alt="image-20210727144744883"></p><p>然后用nps给他做了个代理，这样就可以远程打内网了，岂不美哉！</p><p>但是很不巧，连接这个wifi获得的172开头的内网到不了我想要的核心的生产业务网络。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213654.png" alt="image-20210727145349572"></p><p>对了，不是还有这台机器原本连接的wifi吗，这个wifi是个加密的wifi，想着要不去破解一下，看了下某某万能钥匙平台并没有用户分享过密码。就在准备抓握手包去破解时，试了一下12345678，好家伙，连接上了。</p><p>获取到的ip是100开头的，通过内网探测获得了大量的服务器，而且都有漏洞，也找到了大量的web系统弱口令，而且都是核心生产系统（门诊排队叫号系统、手术排班系统、病房相关系统等）以及一些医生和患者信息。</p><p>除了以上这些，还拿到了一些挂号机和取片机，都是通过跳出沙盒的方式获得。（下次文章简单总结一下常见跳出沙盒的方法）</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213702.png" alt="image-20210727150526021"></p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213712.png" alt="image-20210727164442789"></p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213724.png" alt="image-20210727150614056"></p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213731.png" alt="image-20210727150641726"></p><p>以及门口测温的pc主机。操作这台电脑的时候是晚上，工作人员不在，保安巡视完毕之后过去的，电脑没有关机，但是没有鼠标，这时候就显现出自带设备的重要性了。还有其他一些暴露的pc，如护士站的，但是由于机柜上锁了，又不会开锁，所以也放弃了。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213741.png" alt="image-20210727150733221"></p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213808.png" alt="image-20210727150825948"></p><h2 id="0x03-总结"><a href="#0x03-总结" class="headerlink" title="0x03 总结"></a>0x03 总结</h2><p>整个过程中经历了很多的波折，当然不止文中这些，但是在一次一次的尝试之下最后还是拿到了一些资产。由于时间有限最后没能进入医卫专网也有点遗憾。在尝试做近源的过程中一定要多观察，应该尽可能的抓住一切能利用到的信息去利用，比如任何暴露的接口、网络或者设备，都可能成为突破点。社工也是非常有利用价值的一部分，可以取得事半功倍的效果。还有就是随身带的一些设备，像便携网卡、HackCube、Nethunter、Badusb等等的设备，越齐全越好。这次去的目标是很容易进到内部的，所以对付安保人员也不是很难，面对保安的时候基本上找个理由就忽悠过去了。一定不要被怀疑抓获！</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213821.png" alt="image-20210727162639853"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 渗透测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 渗透测试 </tag>
+            
+            <tag> 攻防对抗 </tag>
+            
+            <tag> RedTeam </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>每日一题：2020年网鼎杯反序列化题目AreUSerialz复现</title>
       <link href="/2021/02/18/wangdingbeifanxuliehua/"/>
       <url>/2021/02/18/wangdingbeifanxuliehua/</url>
@@ -344,11 +373,11 @@
       
         <tags>
             
-            <tag> 注入 </tag>
-            
             <tag> sqlmap </tag>
             
             <tag> bypass </tag>
+            
+            <tag> 注入 </tag>
             
         </tags>
       

@@ -19,20 +19,44 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Cluren&#39;s blogs">
-<meta property="og:url" content="https://cluren.github.io/categories/%E7%BB%83%E4%B9%A0/index.html">
+    <meta name="description" content="一次攻防演习中的近源尝试0x00 背景前段时间参加了某市的一次攻防演练，分配到的目标暴露面较少，而且页面都是趋于静态的那种，最可恶的是某家医院直接关站。。。  以下文章主要记录本次过程的主要内容。 0x01 准备工作由于第一天成果非常有限，因此准备去实地看看情况（在主办方允许近源的情况下），于是我们选择了关站的那家医院。 准备工具：由于是第一次，所以准备到的东西并不多，带了网线、USB无线网卡、U">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一次攻防演习中的近源尝试">
+<meta property="og:url" content="https://cluren.github.io/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/index.html">
 <meta property="og:site_name" content="Cluren&#39;s blogs">
+<meta property="og:description" content="一次攻防演习中的近源尝试0x00 背景前段时间参加了某市的一次攻防演练，分配到的目标暴露面较少，而且页面都是趋于静态的那种，最可恶的是某家医院直接关站。。。  以下文章主要记录本次过程的主要内容。 0x01 准备工作由于第一天成果非常有限，因此准备去实地看看情况（在主办方允许近源的情况下），于是我们选择了关站的那家医院。 准备工具：由于是第一次，所以准备到的东西并不多，带了网线、USB无线网卡、U">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213325.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213503.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213536.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213552.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213610.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213619.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213631.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213645.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213654.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213702.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213712.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213724.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213731.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213741.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213808.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213821.png">
+<meta property="article:published_time" content="2021-11-11T13:38:59.216Z">
+<meta property="article:modified_time" content="2021-11-11T13:41:58.340Z">
 <meta property="article:author" content="cluren">
+<meta property="article:tag" content="渗透测试">
+<meta property="article:tag" content="攻防对抗">
+<meta property="article:tag" content="RedTeam">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213325.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
     
         <link rel="alternate" href="/atom.xml" title="cluren&#39;s Studio." type="application/atom+xml">
     
-    <title>cluren</title>
+    <title>一次攻防演习中的近源尝试 · cluren</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -219,6 +243,8 @@
         }
     </script>
     
+        <body class="post-body">
+    
         <!-- header -->
         <header class="header header-mobile">
     <!-- top read progress line -->
@@ -248,6 +274,17 @@
     </div>
     <!-- toggle banner for post layout -->
     
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">cluren&#39;s Studio.</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">一次攻防演习中的近源尝试</a>
+            </div>
+        </div>
+    
 </header>
 
         <!-- fixed footer -->
@@ -274,24 +311,83 @@
 
 
 
+    height:50vh;
+
 ">
     
     <!-- 主页  -->
+    
+        
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+                一次攻防演习中的近源尝试
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+                
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="渗透测试">渗透测试</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="攻防对抗">攻防对抗</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="RedTeam">RedTeam</a>
+    
+</div>
+
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">1.7k</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2021/11/11</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -421,94 +517,118 @@
 
             <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
             <div class="container container-unloaded">
-                <main class="main index-page">
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/02/18/wangdingbeifanxuliehua/">
-                
-                <span class="abstract-title-text">每日一题：2020年网鼎杯反序列化题目AreUSerialz复现</span>
-            </a>
-            <div class="abstract-content">
-                考点：反序列化、PHP弱类型
-题目复现地址：https://www.ctfhub.com/
-打开题目给出源码：
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2021/11/09">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/02/18</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="CTF">CTF</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="反序列化">反序列化</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="PHP">PHP</a>
-    
-</div>
+                <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="一次攻防演习中的近源尝试"><a href="#一次攻防演习中的近源尝试" class="headerlink" title="一次攻防演习中的近源尝试"></a>一次攻防演习中的近源尝试</h1><h2 id="0x00-背景"><a href="#0x00-背景" class="headerlink" title="0x00 背景"></a>0x00 背景</h2><p>前段时间参加了某市的一次攻防演练，分配到的目标暴露面较少，而且页面都是趋于静态的那种，最可恶的是某家医院直接关站。。。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213325.png" alt="image-20210727151402157"></p>
+<p>以下文章主要记录本次过程的主要内容。</p>
+<h2 id="0x01-准备工作"><a href="#0x01-准备工作" class="headerlink" title="0x01 准备工作"></a>0x01 准备工作</h2><p>由于第一天成果非常有限，因此准备去实地看看情况（在主办方允许近源的情况下），于是我们选择了关站的那家医院。</p>
+<p>准备工具：由于是第一次，所以准备到的东西并不多，带了网线、USB无线网卡、U盘、自己的电脑、便携鼠标和键盘，还有口罩（除了防疫还可以遮住自己的脸不让保安注意到）。</p>
+<p>准备利用的目标：第一件想到的就是wifi，如果能利用wifi进入核心生产区那最好了，还有就是挂号机等等的终端设备，以及暴露的网口，一些办公pc。</p>
+<p>准备完毕就背上书包骑着小电动车出发了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213503.png" alt="image-20210727112356785"></p>
+<h2 id="0x02-现场的情况"><a href="#0x02-现场的情况" class="headerlink" title="0x02 现场的情况"></a>0x02 现场的情况</h2><p>首先通过保安的监视和测温进入门诊大楼，进门之后映入眼帘的就是一个导航大屏终端，于是准备先从他下手。</p>
+<img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213536.png" alt="image-20210727142951549" style="zoom:80%;" />
 
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2020/11/18/pikachubaopo/">
-                
-                <span class="abstract-title-text">Pikachu靶场——基于表单的暴力破解及Intruder模块的简单介绍</span>
-            </a>
-            <div class="abstract-content">
-                本文以pikachu靶场作为演示简单介绍了Burpsuit的Intruder模块
-0x01 Burpsuite Intruder模块简单介绍首先，介绍下burpsuite intruder模块的相关设置，以下三个框分别是并发线程设置（免费版不可修改此处）、失败重试次数、间隔时间设置。
+<p>首先观察环境情况，这台终端机是用来介绍医院的楼层、科室等信息的，在后边有电源开关、USB接口，网线口插着网线。通过简单的触摸操作发现这是台安卓系统的机器，于是通过手势操作划出了他的三大功能键，一不小心就跳出了沙盒。</p>
+<p>左右观望了一下没有保安之后就开始收集他的信息，ip地址是100.*.*.*，是个安卓5的操作系统，无法访问互联网，看来网线接的是医院的内部网络，这也就意味着没法种马通过公网上线，于是想着通过连接wifi给他出网，正好医院有公共上网的wifi，做个双网卡的跳板机岂不美哉！但是很不巧，wifi是打开了，但是搜不到信号。。。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213552.png" alt="image-20210727112802414"></p>
+<p>没事，不是后面有USB接口吗，不正好带了linux免驱的无线网卡吗，但是很不巧，插上他不显示网卡信息。（安卓这块使用外置无线网卡不太懂）于是暂且放弃，开始从wifi下手。</p>
+<p>在门诊楼搜到的wifi是加密的，通过问询工作人员获得了密码，可以访问互联网，连接后获取到的ip是10开头的，跟那个终端机100开头的网络是互不相通的。于是开始探测wifi网络的内网资产。通过扫描探测找到内网资有大量的摄像头弱口令，部分打印机，也有少量的pc，以及三百多台交换机和路由器超级管理员（移动定制的网络设备出厂默认超级管理员账号/密码:CMCCAdmin /aDm8H%MdA），以及少量的ms17-010漏洞等。但是很不巧，这个wifi并不能找到医院核心生产资产。</p>
+<p>于是又去了住院楼。同样，顺利通过了测温和保安大哥的监视。在这里又发现了另外一个wifi，连接后跳出认证页面，获取到的ip是172开头的，看来的电信做的访客wifi，给访客上网用的。但是很不巧，这个wifi内网没有我想要的东西，还没门诊楼拿到的东西多。wifi这块就先放一放，不是还有终端机吗。</p>
+<p>于是，发现在住院楼同样有一台一模一样的安卓导航终端机，但是一想连不了wifi也没啥用啊，报着试试看的心态过去看了下，这台机器并没有插网线，而且他的wifi功能是好的，连接了一个加密的wifi，同样是100开头的ip，但是他不出网。那没事，连上公共wifi先上个线。</p>
+<p>先连接能出网的wifi使其正常访问互联网。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213610.png" alt="image-20210727144453243"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213619.png" alt="image-20210727144500954"></p>
+<p>再通过远程下载木马安装</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213631.png" alt="image-20210727144636736"></p>
+<p>msf监听上线</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213645.png" alt="image-20210727144744883"></p>
+<p>然后用nps给他做了个代理，这样就可以远程打内网了，岂不美哉！</p>
+<p>但是很不巧，连接这个wifi获得的172开头的内网到不了我想要的核心的生产业务网络。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213654.png" alt="image-20210727145349572"></p>
+<p>对了，不是还有这台机器原本连接的wifi吗，这个wifi是个加密的wifi，想着要不去破解一下，看了下某某万能钥匙平台并没有用户分享过密码。就在准备抓握手包去破解时，试了一下12345678，好家伙，连接上了。</p>
+<p>获取到的ip是100开头的，通过内网探测获得了大量的服务器，而且都有漏洞，也找到了大量的web系统弱口令，而且都是核心生产系统（门诊排队叫号系统、手术排班系统、病房相关系统等）以及一些医生和患者信息。</p>
+<p>除了以上这些，还拿到了一些挂号机和取片机，都是通过跳出沙盒的方式获得。（下次文章简单总结一下常见跳出沙盒的方法）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213702.png" alt="image-20210727150526021"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213712.png" alt="image-20210727164442789"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213724.png" alt="image-20210727150614056"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213731.png" alt="image-20210727150641726"></p>
+<p>以及门口测温的pc主机。操作这台电脑的时候是晚上，工作人员不在，保安巡视完毕之后过去的，电脑没有关机，但是没有鼠标，这时候就显现出自带设备的重要性了。还有其他一些暴露的pc，如护士站的，但是由于机柜上锁了，又不会开锁，所以也放弃了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213741.png" alt="image-20210727150733221"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213808.png" alt="image-20210727150825948"></p>
+<h2 id="0x03-总结"><a href="#0x03-总结" class="headerlink" title="0x03 总结"></a>0x03 总结</h2><p>整个过程中经历了很多的波折，当然不止文中这些，但是在一次一次的尝试之下最后还是拿到了一些资产。由于时间有限最后没能进入医卫专网也有点遗憾。在尝试做近源的过程中一定要多观察，应该尽可能的抓住一切能利用到的信息去利用，比如任何暴露的接口、网络或者设备，都可能成为突破点。社工也是非常有利用价值的一部分，可以取得事半功倍的效果。还有就是随身带的一些设备，像便携网卡、HackCube、Nethunter、Badusb等等的设备，越齐全越好。这次去的目标是很容易进到内部的，所以对付安保人员也不是很难，面对保安的时候基本上找个理由就忽悠过去了。一定不要被怀疑抓获！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211111213821.png" alt="image-20210727162639853"></p>
 
-Rerequest Headers介绍：
-如果选中‘update Content-Length heade...
-            </div>
-            <!-- read more -->
+    </article>
+    <!-- license -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://cluren.github.io">cluren</a>
+            <p>原文链接：<a href="https://cluren.github.io/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/">https://cluren.github.io/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/</a>
+            <p>发表日期：<a href="https://cluren.github.io/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/">November 11th 2021, 9:38:59 pm</a>
+            <p>更新日期：<a href="https://cluren.github.io/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/">November 11th 2021, 9:41:58 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2021/11/09">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/11/18</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2021/02/18/wangdingbeifanxuliehua/" title="每日一题：2020年网鼎杯反序列化题目AreUSerialz复现">
+                    <div class="prevTitle">每日一题：2020年网鼎杯反序列化题目AreUSerialz复现</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- comment -->
     
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="渗透测试">渗透测试</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="靶场">靶场</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="pikachu">pikachu</a>
-    
-</div>
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
 
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
+
+            
+
+            
+
+            
+
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
+            
+            
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="comment"></div>
+    <script>
+        new Valine({
+            el: '#comment',
+            notify:false,
+            verify:false,
+            appId: "lXFnEI8tfD6i1BiP9QMIKgF6-gzGzoHsz",
+            appKey: "wAvEy0nQsaGDn5HGTVzluhQW",
+            placeholder: "",
+            path:window.location.pathname,
+            avatar:'mm'
+        });
+    </script>
+
+
+        </div>
     
-    <!-- paginator  -->
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
     
 </main>
 
@@ -594,6 +714,23 @@ Rerequest Headers介绍：
 
         </div>
         <!-- toc -->
+        
+            <div class="toc-wrapper toc-wrapper-loding" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一次攻防演习中的近源尝试"><span class="toc-number">1.</span> <span class="toc-text">一次攻防演习中的近源尝试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x00-背景"><span class="toc-number">1.1.</span> <span class="toc-text">0x00 背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-准备工作"><span class="toc-number">1.2.</span> <span class="toc-text">0x01 准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-现场的情况"><span class="toc-number">1.3.</span> <span class="toc-text">0x02 现场的情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-总结"><span class="toc-number">1.4.</span> <span class="toc-text">0x03 总结</span></a></li></ol></li></ol>
+            </div>
         
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
@@ -1162,6 +1299,8 @@ Rerequest Headers介绍：
         <!-- CNZZ -->
         
         <!-- async load share.js -->
+        
+            <script src="/scripts/share.js?v=20210823" async></script>
         
         <!-- mermaid -->
         
