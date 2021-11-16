@@ -16,39 +16,35 @@
     <meta name="renderer" content="webkit">
     <meta name="copyright" content="cluren">
     
-        <meta name="keywords" content="CTF,hexo,hexo-theme,hexo-blog">
+        <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="CTF writeup">
+    <meta name="description" content="0x01 环境配置及安装概述 Frida是一款跨平台使用的，面向开发人员、逆向工程师和安全研究人员的动态工具集。 Github地址：frida&#x2F;frida: Clone this repo to build Frida (github.com) Frida框架分为两部分  一部分是运行在系统上的交互工具frida CLI。 另一部分是运行在目标机器上的代码注入工具 frida-serve。  环境">
 <meta property="og:type" content="article">
-<meta property="og:title" content="四叶草四校友谊赛CTF记录">
-<meta property="og:url" content="https://cluren.github.io/2020/04/26/siyecaoyouyisai/index.html">
+<meta property="og:title" content="Frida初体验-Frida的使用学习">
+<meta property="og:url" content="https://cluren.github.io/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Cluren&#39;s blogs">
-<meta property="og:description" content="CTF writeup">
+<meta property="og:description" content="0x01 环境配置及安装概述 Frida是一款跨平台使用的，面向开发人员、逆向工程师和安全研究人员的动态工具集。 Github地址：frida&#x2F;frida: Clone this repo to build Frida (github.com) Frida框架分为两部分  一部分是运行在系统上的交互工具frida CLI。 另一部分是运行在目标机器上的代码注入工具 frida-serve。  环境">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/atm1.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/atm2.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyydxsh.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyyht.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyyswrz1.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyyswrz.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyyrz.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Cluren/imgHosting/sycyyrar.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyydnes.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyynes1.jpg">
-<meta property="article:published_time" content="2020-04-26T03:11:53.139Z">
-<meta property="article:modified_time" content="2020-10-17T11:20:34.651Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116200256.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116201118.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116231021.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116231031.png">
+<meta property="article:published_time" content="2021-11-16T11:44:33.000Z">
+<meta property="article:modified_time" content="2021-11-16T15:11:27.713Z">
 <meta property="article:author" content="cluren">
-<meta property="article:tag" content="CTF">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="Frida">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/atm1.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116200256.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
     
         <link rel="alternate" href="/atom.xml" title="cluren&#39;s Studio." type="application/atom+xml">
     
-    <title>四叶草四校友谊赛CTF记录 · cluren</title>
+    <title>Frida初体验-Frida的使用学习 · cluren</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -273,7 +269,7 @@
                 <a href="/">cluren&#39;s Studio.</a>
             </div>
             <div class="post-title header-element">
-                <a href="#" class="post-name">四叶草四校友谊赛CTF记录</a>
+                <a href="#" class="post-name">Frida初体验-Frida的使用学习</a>
             </div>
         </div>
     
@@ -319,7 +315,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-                四叶草四校友谊赛CTF记录
+                Frida初体验-Frida的使用学习
             <!-- 404 -->
             
         </h1>
@@ -339,22 +335,24 @@
                     <div class= post-intro-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="writeup">writeup</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Android">Android</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="CTF">CTF</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="工具">工具</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Frida">Frida</a>
     
 </div>
 
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">739</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">596</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
                     <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2020/04/26</span>
+                    <span class="post-intro-time">2021/11/16</span>
                     <!-- busuanzi -->
                     
                         <span id="busuanzi_container_page_pv" class="busuanzi-pv">
@@ -509,51 +507,50 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <blockquote>
-<p>题目来源于四叶草云演平台攻防启航班考核</p>
-</blockquote>
-<h2 id="阿童木（任意文件下载）"><a href="#阿童木（任意文件下载）" class="headerlink" title="阿童木（任意文件下载）"></a>阿童木（任意文件下载）</h2><p>打开题目是很多张阿童木的图片，点击图片会直接下载。测试存在任意文件下载漏洞，下载passwd文件找到BASE64加密的flag,解密即可拿到flag。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/atm1.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/atm2.jpg" alt=""></p>
-<h2 id="大学生活（SQL注入）"><a href="#大学生活（SQL注入）" class="headerlink" title="大学生活（SQL注入）"></a>大学生活（SQL注入）</h2><p>更改id值，回显发生变化（底部红框部分）过滤空格、and、order、=等</p>
-<p>payload：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">?id&#x3D;1&#x2F;**&#x2F;%26&#x2F;**&#x2F;1</span><br><span class="line">?id&#x3D;1&#x2F;**&#x2F;%26&#x2F;**&#x2F;0</span><br><span class="line">?id&#x3D;1&#x2F;**&#x2F;group&#x2F;**&#x2F;by&#x2F;**&#x2F;6</span><br><span class="line">?id&#x3D;-1&#x2F;**&#x2F;union&#x2F;**&#x2F;select&#x2F;**&#x2F;1,database(),3,4,5,6,7</span><br><span class="line">?id&#x3D;-2&#x2F;**&#x2F;union&#x2F;**&#x2F;select&#x2F;**&#x2F;1,group_concat(table_name),3,4,5,6,7&#x2F;**&#x2F;from&#x2F;**&#x2F;information_schema.tables&#x2F;**&#x2F;where&#x2F;**&#x2F;!(table_schema&lt;&gt;&quot;web&quot;)</span><br><span class="line">?id&#x3D;-2&#x2F;**&#x2F;union&#x2F;**&#x2F;select&#x2F;**&#x2F;1,group_concat(column_name),3,4,5,6,7&#x2F;**&#x2F;from&#x2F;**&#x2F;information_schema.columns&#x2F;**&#x2F;where&#x2F;**&#x2F;!(table_name&lt;&gt;&quot;flag&quot;)</span><br><span class="line">?id&#x3D;-2&#x2F;**&#x2F;union&#x2F;**&#x2F;select&#x2F;**&#x2F;1,flag,3,4,5,6,7&#x2F;**&#x2F;from&#x2F;**&#x2F;flag</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyydxsh.jpg" alt=""></p>
-<h2 id="后台管理系统（SQL注入、信息泄露）"><a href="#后台管理系统（SQL注入、信息泄露）" class="headerlink" title="后台管理系统（SQL注入、信息泄露）"></a>后台管理系统（SQL注入、信息泄露）</h2><p>本题为约束的SQL注入攻击，登录框尝试万能密码绕过没成功，注册账号时admin后面加空格成功注册后登录即可以admin身份成功登录。本次还存在数据库信息泄露，存在test.sql文件，下载后可得到admin密码。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyyht.jpg" alt=""> </p>
-<h2 id="上网认证系统（文件包含）"><a href="#上网认证系统（文件包含）" class="headerlink" title="上网认证系统（文件包含）"></a>上网认证系统（文件包含）</h2><p>存在本地文件包含，可以利用PHP为协议，同时存在盲注（但是没找到flag）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyyswrz1.jpg" alt=""></p>
-<p>解题方法之一：根据题目源码会uesrname会存入session，phpinfo找到session文件位置，在注册用户名构造payload并包含，session会base64加密，包含时需进行base64解码，所以paylaod前面应该为8的倍数防止payload解码失败。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyyswrz.jpg" alt=""></p>
-<h2 id="Find-the-hacker（日志分析）"><a href="#Find-the-hacker（日志分析）" class="headerlink" title="Find  the hacker（日志分析）"></a>Find  the hacker（日志分析）</h2><p>题目要求找出恶意爆破成功时间。在日志中找到爆破日志，然后这条302跳转的就是成功爆破那条日志。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyyrz.jpg" alt=""></p>
-<h2 id="手绘（png重水印攻击）"><a href="#手绘（png重水印攻击）" class="headerlink" title="手绘（png重水印攻击）"></a>手绘（png重水印攻击）</h2><p>gihub脚本直接解出flag</p>
-<h2 id="打假（RAR伪加密）"><a href="#打假（RAR伪加密）" class="headerlink" title="打假（RAR伪加密）"></a>打假（RAR伪加密）</h2><p>010editor改加密位即可  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Cluren/imgHosting/sycyyrar.jpg" alt=""></p>
-<h2 id="Blog（ssit注入）"><a href="#Blog（ssit注入）" class="headerlink" title="Blog（ssit注入）"></a>Blog（ssit注入）</h2><p> 查看网页源代码发现一句注释：    &lt;!– 还特地嘱咐我上线的时候要关闭debug模式，老子早就看你不顺眼了，我就不！</p>
-<p>在自定义模板页面可以进行ssit注入。命令执行可以看源码，最后发现flag文件读取即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; &#39;&#39;.__class__.__mro__.__getitem__(2).__subclasses__().pop(59).__init__.func_globals.linecache.os.popen(&#39;ls&#39;).read() &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="NES（DES加密）"><a href="#NES（DES加密）" class="headerlink" title="NES（DES加密）"></a>NES（DES加密）</h2><p>给出的是DES的n次加密，密钥八个一组共6个，逆着解密。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyydnes.jpg" alt=""></p>
-<p>以下是官方writeup给出的脚本：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/sycyynes1.jpg" alt=""></p>
-<h2 id="XBOR（异或加密）"><a href="#XBOR（异或加密）" class="headerlink" title="XBOR（异或加密）"></a>XBOR（异或加密）</h2><p>给出一串字符，看起来像是BASE加密，解密后并不是flag，根据题目提示想到异或，直接利用下面连接的脚本就可以得出flag。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fnR5f2N7KXt5LyooLn59Kyp6fSp+LS96KCwpIX15LHt+Liope2U&#x3D;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://blog.csdn.net/valecalida/article/details/102717762" target="_blank" rel="noopener">https://blog.csdn.net/valecalida/article/details/102717762</a></p>
+        <h2 id="0x01-环境配置及安装"><a href="#0x01-环境配置及安装" class="headerlink" title="0x01 环境配置及安装"></a>0x01 环境配置及安装</h2><p><strong>概述</strong></p>
+<p>Frida是一款跨平台使用的，面向开发人员、逆向工程师和安全研究人员的动态工具集。</p>
+<p>Github地址：<a href="https://github.com/frida/frida" target="_blank" rel="noopener">frida/frida: Clone this repo to build Frida (github.com)</a></p>
+<p><strong>Frida框架分为两部分</strong></p>
+<ul>
+<li>一部分是运行在系统上的交互工具frida CLI。</li>
+<li>另一部分是运行在目标机器上的代码注入工具 frida-serve。</li>
+</ul>
+<p><strong>环境及安装</strong></p>
+<p>可以使用python的pip来安装Frida，也可以使用npm来安装。以下安装以windows环境下python3.8以及安卓模拟器环境为例。(使用旧版本python安装新版本frida在使用过程中可能会出现错误)</p>
+<p>在python环境的windows电脑上执行以下命令安装frida环境。</p>
+<p><code>pip install frida</code></p>
+<p><code>pip install frida-tools</code></p>
+<p>安装完成执行命令 <code>frida --version</code>即可看到输出frida版本信息。</p>
+<p>下载frida-server，选择对应cpu架构下载，一般电脑模拟器下载andriod-x86或者andriod-x86_64，安卓手机下载andriod-arm或者andriod-arm64。这里以x86架构处理器电脑安卓模拟器为例，下载andriod-x86。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116200256.png" alt="img"></p>
+<p><strong>运行Frida-server</strong></p>
+<p>使用adb连接安卓设备，将下载到的frida-server push到安卓环境的目录下。</p>
+<p>adb下载安装及使用参考：<a href="https://blog.csdn.net/weixin_43927138/article/details/90477966" target="_blank" rel="noopener">adb下载安装及使用_Dongs丶的博客-CSDN博客</a></p>
+<p>使用<code>abd device</code> 命令查看到模拟器已经连接到adb的设备，我这里使用的是模拟器，如果使用安卓手机需要打开USB调试功能，并将手机连接至电脑。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116201118.png" alt="image-20211116201112290"></p>
+<p>将下载下来的frida-server文件解压出来，为了方便这里重命名位fridas。通过adb push到模拟器安卓存储目录下并执行该文件，操作步骤如下。</p>
+<p>注：frida客户端和服务端版本不同可能会导致不成功</p>
+<ol>
+<li><p><code>adb push fridas /data/local/tmp</code> 使用adb将frida-server push到安卓环境/data/local/tmp目录下。</p>
+</li>
+<li><p><code>adb  forward tcp:27042 tcp:27042</code> 转发android TCP端口到本地。</p>
+</li>
+<li><p><code>adb shell</code> 进入安卓shell，赋予frida-server执行权限，并运行。（）</p>
+</li>
+</ol>
+<p>注：如果有多个设备执行adb命令时需要加-s参数 ：<code>adb -s [模拟器ID] forward tcp:27042 tcp:27042</code> 。如果执行失败，需要执行<code>su</code>命令切换至root账号再进行操作。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116231021.png" alt="image-20211116225256198"></p>
+<p><code>frida-ps -U</code>测试环境，出现安卓设备的进程，说明环境配置成功。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116231031.png" alt="image-20211116230201023"></p>
 
     </article>
     <!-- license -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="https://cluren.github.io">cluren</a>
-            <p>原文链接：<a href="https://cluren.github.io/2020/04/26/siyecaoyouyisai/">https://cluren.github.io/2020/04/26/siyecaoyouyisai/</a>
-            <p>发表日期：<a href="https://cluren.github.io/2020/04/26/siyecaoyouyisai/">April 26th 2020, 11:11:53 am</a>
-            <p>更新日期：<a href="https://cluren.github.io/2020/04/26/siyecaoyouyisai/">October 17th 2020, 7:20:34 pm</a>
+            <p>原文链接：<a href="https://cluren.github.io/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">https://cluren.github.io/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</a>
+            <p>发表日期：<a href="https://cluren.github.io/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">November 16th 2021, 7:44:33 pm</a>
+            <p>更新日期：<a href="https://cluren.github.io/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">November 16th 2021, 11:11:27 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -561,17 +558,12 @@
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2020/06/07/pymetasploit/" title="Python调用Metasploit实现自动化漏洞利用">
-                    <div class="nextTitle">Python调用Metasploit实现自动化漏洞利用</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2020/04/21/py-nmapbaocuo/" title="Python-nmap模块报错解决办法">
-                    <div class="prevTitle">Python-nmap模块报错解决办法</div>
+                <a href="/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/" title="一次攻防演习中的近源尝试">
+                    <div class="prevTitle">一次攻防演习中的近源尝试</div>
                 </a>
             
         </li>
@@ -720,7 +712,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#阿童木（任意文件下载）"><span class="toc-number">1.</span> <span class="toc-text">阿童木（任意文件下载）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#大学生活（SQL注入）"><span class="toc-number">2.</span> <span class="toc-text">大学生活（SQL注入）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后台管理系统（SQL注入、信息泄露）"><span class="toc-number">3.</span> <span class="toc-text">后台管理系统（SQL注入、信息泄露）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上网认证系统（文件包含）"><span class="toc-number">4.</span> <span class="toc-text">上网认证系统（文件包含）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-the-hacker（日志分析）"><span class="toc-number">5.</span> <span class="toc-text">Find  the hacker（日志分析）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#手绘（png重水印攻击）"><span class="toc-number">6.</span> <span class="toc-text">手绘（png重水印攻击）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#打假（RAR伪加密）"><span class="toc-number">7.</span> <span class="toc-text">打假（RAR伪加密）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Blog（ssit注入）"><span class="toc-number">8.</span> <span class="toc-text">Blog（ssit注入）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NES（DES加密）"><span class="toc-number">9.</span> <span class="toc-text">NES（DES加密）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#XBOR（异或加密）"><span class="toc-number">10.</span> <span class="toc-text">XBOR（异或加密）</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x01-环境配置及安装"><span class="toc-number">1.</span> <span class="toc-text">0x01 环境配置及安装</span></a></li></ol>
             </div>
         
         <!-- sidebar -->

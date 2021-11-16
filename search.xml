@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>Frida初体验-Frida的使用学习</title>
+      <link href="/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+      <url>/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="0x01-环境配置及安装"><a href="#0x01-环境配置及安装" class="headerlink" title="0x01 环境配置及安装"></a>0x01 环境配置及安装</h2><p><strong>概述</strong></p><p>Frida是一款跨平台使用的，面向开发人员、逆向工程师和安全研究人员的动态工具集。</p><p>Github地址：<a href="https://github.com/frida/frida" target="_blank" rel="noopener">frida/frida: Clone this repo to build Frida (github.com)</a></p><p><strong>Frida框架分为两部分</strong></p><ul><li>一部分是运行在系统上的交互工具frida CLI。</li><li>另一部分是运行在目标机器上的代码注入工具 frida-serve。</li></ul><p><strong>环境及安装</strong></p><p>可以使用python的pip来安装Frida，也可以使用npm来安装。以下安装以windows环境下python3.8以及安卓模拟器环境为例。(使用旧版本python安装新版本frida在使用过程中可能会出现错误)</p><p>在python环境的windows电脑上执行以下命令安装frida环境。</p><p><code>pip install frida</code></p><p><code>pip install frida-tools</code></p><p>安装完成执行命令 <code>frida --version</code>即可看到输出frida版本信息。</p><p>下载frida-server，选择对应cpu架构下载，一般电脑模拟器下载andriod-x86或者andriod-x86_64，安卓手机下载andriod-arm或者andriod-arm64。这里以x86架构处理器电脑安卓模拟器为例，下载andriod-x86。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116200256.png" alt="img"></p><p><strong>运行Frida-server</strong></p><p>使用adb连接安卓设备，将下载到的frida-server push到安卓环境的目录下。</p><p>adb下载安装及使用参考：<a href="https://blog.csdn.net/weixin_43927138/article/details/90477966" target="_blank" rel="noopener">adb下载安装及使用_Dongs丶的博客-CSDN博客</a></p><p>使用<code>abd device</code> 命令查看到模拟器已经连接到adb的设备，我这里使用的是模拟器，如果使用安卓手机需要打开USB调试功能，并将手机连接至电脑。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116201118.png" alt="image-20211116201112290"></p><p>将下载下来的frida-server文件解压出来，为了方便这里重命名位fridas。通过adb push到模拟器安卓存储目录下并执行该文件，操作步骤如下。</p><p>注：frida客户端和服务端版本不同可能会导致不成功</p><ol><li><p><code>adb push fridas /data/local/tmp</code> 使用adb将frida-server push到安卓环境/data/local/tmp目录下。</p></li><li><p><code>adb  forward tcp:27042 tcp:27042</code> 转发android TCP端口到本地。</p></li><li><p><code>adb shell</code> 进入安卓shell，赋予frida-server执行权限，并运行。（）</p></li></ol><p>注：如果有多个设备执行adb命令时需要加-s参数 ：<code>adb -s [模拟器ID] forward tcp:27042 tcp:27042</code> 。如果执行失败，需要执行<code>su</code>命令切换至root账号再进行操作。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116231021.png" alt="image-20211116225256198"></p><p><code>frida-ps -U</code>测试环境，出现安卓设备的进程，说明环境配置成功。</p><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211116231031.png" alt="image-20211116230201023"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> 工具 </tag>
+            
+            <tag> Frida </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一次攻防演习中的近源尝试</title>
       <link href="/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/"/>
       <url>/2021/11/11/%E4%B8%80%E6%AC%A1%E6%94%BB%E9%98%B2%E6%BC%94%E4%B9%A0%E4%B8%AD%E7%9A%84%E8%BF%91%E6%BA%90%E5%B0%9D%E8%AF%95/</url>
@@ -319,9 +342,9 @@
       
         <tags>
             
-            <tag> 渗透测试 </tag>
-            
             <tag> 工具 </tag>
+            
+            <tag> 渗透测试 </tag>
             
             <tag> cobalt strike </tag>
             
@@ -373,11 +396,11 @@
       
         <tags>
             
+            <tag> 注入 </tag>
+            
             <tag> sqlmap </tag>
             
             <tag> bypass </tag>
-            
-            <tag> 注入 </tag>
             
         </tags>
       
