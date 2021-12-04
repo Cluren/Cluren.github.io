@@ -21,7 +21,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Cluren&#39;s blogs">
-<meta property="og:url" content="https://cluren.github.io/tags/Bypass/index.html">
+<meta property="og:url" content="https://cluren.github.io/tags/bypass/index.html">
 <meta property="og:site_name" content="Cluren&#39;s blogs">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="cluren">
@@ -430,32 +430,36 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2019/10/23/wafjieshao/">
+            <a class="abstract-title" href="/2020/01/20/sqlmaptamperbianxie/">
                 
-                <span class="abstract-title-text">WAF介绍及常见绕过方法</span>
+                <span class="abstract-title-text">SQLmap Tamper编写（笔记）</span>
             </a>
             <div class="abstract-content">
-                一、WAF简介   WAF(WebApplicationFirewall)也称：网站应用级入侵防御系统，是通过执行一系列针对HTTP/HTTPS的安全策略来专门为Web应用提供保护的一款产品。
-1.工作原理   对web应用程序客户端发出的流量进行内容检测和验证，检测其安全性与合法性，来屏蔽常见的网站漏洞攻击，如SQL注入，XML注入、XSS等。
-2.WAF分类软件型WAF  以软件形式装在...
+                0x00 $ python sqlmap.py --list-tampers        #查看内置tamper 
+sqlmap提供了很多的内置tamper，其包含了常见数据库的sql注入绕过，可在特定条件下进行SQL注入绕过防御。
+0x01 --tamper=xxx.py 
+使用时加上tamper选项即可。
+0x02根据具体情况编写自己的tamper脚本
+
+依据自己当前分析或fuzz出的...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2021/11/09">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/23</span>
+                <div class="abstract-date" title="Last updated: 2020/10/17">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/01/20</span>
                 </div>
                 <!-- tags -->
                 
                     <div class= abstract-tags >
     
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="渗透测试">渗透测试</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="注入">注入</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="WAF">WAF</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="sqlmap">sqlmap</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="Bypass">Bypass</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="bypass">bypass</a>
     
 </div>
 
@@ -764,8 +768,6 @@
         
         
         
-        
-        
     
     
     
@@ -782,6 +784,21 @@
     
         
             
+            
+            <div class="archive-year"> 2021 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/16</span>
+            <a class="archive-post-title" href="/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">Frida初体验-Frida的使用学习</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
             
             <div class="archive-year"> Invalid date </div>
             <ul class="year-list">
@@ -805,12 +822,6 @@
         <li class="archive-post-item">
             <span class="archive-post-date">12/04</span>
             <a class="archive-post-title" href="/2021/12/04/cobalt%20strike2-Infrastructure/">Cobalt Strike 4.0第二节Infrastructure笔记</a>
-        </li>
-    
-        
-        <li class="archive-post-item">
-            <span class="archive-post-date">11/16</span>
-            <a class="archive-post-title" href="/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">Frida初体验-Frida的使用学习</a>
         </li>
     
         
@@ -978,11 +989,6 @@
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
         
-            <span class="sidebar-tag-name" data-tags="暴破">
-                <span class="iconfont-archer">&#xe606;</span>
-                暴破
-            </span>
-        
             <span class="sidebar-tag-name" data-tags="Android">
                 <span class="iconfont-archer">&#xe606;</span>
                 Android
@@ -996,6 +1002,11 @@
             <span class="sidebar-tag-name" data-tags="Frida">
                 <span class="iconfont-archer">&#xe606;</span>
                 Frida
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="暴破">
+                <span class="iconfont-archer">&#xe606;</span>
+                暴破
             </span>
         
             <span class="sidebar-tag-name" data-tags="渗透测试">
@@ -1171,6 +1182,12 @@
         <!-- CNZZ -->
         
         <!-- async load share.js -->
+        
+        <!-- mermaid -->
+        
+    </body>
+</html>
+nc load share.js -->
         
         <!-- mermaid -->
         
