@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cluren.github.io/"/>
-  <updated>2021-11-16T15:11:27.713Z</updated>
+  <updated>2021-12-04T07:44:19.130Z</updated>
   <id>https://cluren.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cobalt Strike 4.0第二节Infrastructure笔记</title>
+    <link href="https://cluren.github.io/2021/12/04/cobalt%20strike2-Infrastructure/"/>
+    <id>https://cluren.github.io/2021/12/04/cobalt%20strike2-Infrastructure/</id>
+    <published>2021-12-04T07:34:33.000Z</published>
+    <updated>2021-12-04T07:44:19.130Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;这是cobalt strike 4.0官方教程的第二节观看笔记笔记。两年之前的课一直拖到现在才写。。。&lt;/p&gt;
+&lt;p&gt;配合视频食用效果更佳！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;iframe height=&quot;500&quot; width=&quot;700&quot; src=&quot;//player.bilibili.com/player.html?aid=838038396&amp;bvid=BV1ug4y167Y3&amp;cid=187404444&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="工具" scheme="https://cluren.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="渗透测试" scheme="https://cluren.github.io/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="cobalt strike" scheme="https://cluren.github.io/tags/cobalt-strike/"/>
+    
+  </entry>
   
   <entry>
     <title>Frida初体验-Frida的使用学习</title>

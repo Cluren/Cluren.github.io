@@ -16,35 +16,56 @@
     <meta name="renderer" content="webkit">
     <meta name="copyright" content="cluren">
     
-        <meta name="keywords" content="cobalt strike,hexo,hexo-theme,hexo-blog">
+        <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="这是cobalt strike 4.0官方教程的第一节笔记。看到别人写的直接转载了，自己懒得写了，下方是我自己传的视频。（英语水平及精力有限，错误之处欢迎在B站私信）">
+    <meta name="description" content="这是cobalt strike 4.0官方教程的第二节观看笔记笔记。两年之前的课一直拖到现在才写。。。 配合视频食用效果更佳！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cobalt Strike 4.0第一节Operations笔记（转载）">
-<meta property="og:url" content="https://cluren.github.io/2020/02/20/cs1op/index.html">
+<meta property="og:title" content="Cobalt Strike 4.0第二节Infrastructure笔记">
+<meta property="og:url" content="https://cluren.github.io/2021/12/04/cobalt%20strike2-Infrastructure/index.html">
 <meta property="og:site_name" content="Cluren&#39;s blogs">
-<meta property="og:description" content="这是cobalt strike 4.0官方教程的第一节笔记。看到别人写的直接转载了，自己懒得写了，下方是我自己传的视频。（英语水平及精力有限，错误之处欢迎在B站私信）">
+<meta property="og:description" content="这是cobalt strike 4.0官方教程的第二节观看笔记笔记。两年之前的课一直拖到现在才写。。。 配合视频食用效果更佳！">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-1.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-2.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-3.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-4.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-5.jpg">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-6.jpg">
-<meta property="article:published_time" content="2020-02-20T14:14:37.000Z">
-<meta property="article:modified_time" content="2021-11-09T14:26:49.137Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210127151745.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210127151051.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210127174655.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151335.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151347.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210131105058.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210201144223.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210201155937.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151411.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151422.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151436.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151454.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151500.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151511.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151521.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151531.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151536.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151545.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151553.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151559.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151607.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151709.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151718.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151733.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151802.png">
+<meta property="article:published_time" content="2021-12-04T07:34:33.000Z">
+<meta property="article:modified_time" content="2021-12-04T07:44:19.130Z">
 <meta property="article:author" content="cluren">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="渗透测试">
 <meta property="article:tag" content="cobalt strike">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-1.jpg">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210127151745.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
     
         <link rel="alternate" href="/atom.xml" title="cluren&#39;s Studio." type="application/atom+xml">
     
-    <title>Cobalt Strike 4.0第一节Operations笔记（转载） · cluren</title>
+    <title>Cobalt Strike 4.0第二节Infrastructure笔记 · cluren</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -269,7 +290,7 @@
                 <a href="/">cluren&#39;s Studio.</a>
             </div>
             <div class="post-title header-element">
-                <a href="#" class="post-name">Cobalt Strike 4.0第一节Operations笔记（转载）</a>
+                <a href="#" class="post-name">Cobalt Strike 4.0第二节Infrastructure笔记</a>
             </div>
         </div>
     
@@ -315,7 +336,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-                Cobalt Strike 4.0第一节Operations笔记（转载）
+                Cobalt Strike 4.0第二节Infrastructure笔记
             <!-- 404 -->
             
         </h1>
@@ -346,13 +367,13 @@
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">3.4k</span>阅读时长: <span class="post-count reading-time">12 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">5k</span>阅读时长: <span class="post-count reading-time">18 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
                     <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2020/02/20</span>
+                    <span class="post-intro-time">2021/12/04</span>
                     <!-- busuanzi -->
                     
                         <span id="busuanzi_container_page_pv" class="busuanzi-pv">
@@ -508,282 +529,230 @@
                 <main class="main post-page">
     <article class="article-entry">
         <blockquote>
-<p>这是cobalt strike 4.0官方教程的第一节笔记。看到别人写的直接转载了，自己懒得写了，下方是我自己传的视频。（英语水平及精力有限，错误之处欢迎在B站私信）</p>
-<iframe height="500" width="700" src="//player.bilibili.com/player.html?aid=85159864&cid=145589441&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<p>这是cobalt strike 4.0官方教程的第二节观看笔记笔记。两年之前的课一直拖到现在才写。。。</p>
+<p>配合视频食用效果更佳！</p>
+</blockquote>
+<iframe height="500" width="700" src="//player.bilibili.com/player.html?aid=838038396&bvid=BV1ug4y167Y3&cid=187404444&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 <a id="more"></a>
 
-<p>传送门：<a href="https://www.bilibili.com/video/av85159864/" target="_blank" rel="noopener">渗透测试 Cobalt_Strike 4中英双字</a></p>
-<p>以下为转载内容：</p>
-</blockquote>
-<h1 id="0x01-前言"><a href="#0x01-前言" class="headerlink" title="0x01 前言"></a>0x01 前言</h1><ul>
-<li>本文主要是看了 Cobalt Strike 4.0 Youtube 官方教程第一课【Operations】之后记的笔记，资源见参考文档。</li>
-<li>教程的授课者是 Cobalt Strike 的创造者 Raphael Mudge。可以说没人比他更权威了。</li>
-<li>CS 系列教程及手册的好处就在于其中融入了很多红队的思想、策略和模型，CS 自己的定位也是「缩小渗透测试工具和高级威胁恶意软件之间的差距」这样一个工具。学习 CS 对了解后渗透帮助颇多。</li>
-<li>本文记录的视频对应了 CS 手册的第一章 <code>Operations</code> ，也就是操作。笔记记录是有选择的，一些基本的 CS 中的东西比如 <code>可拓展 C2</code>、<code>cna 插件</code>、<code>团队服务器</code>，因为关于这些的基本操作我已经了解了，就没有记。</li>
+<h2 id="本节概要"><a href="#本节概要" class="headerlink" title="本节概要"></a>本节概要</h2><ol>
+<li>监听器管理</li>
+<li>不同Beacon Payload介绍<ul>
+<li>HTTP/HTTPS Beacon</li>
+<li>DNS beacon</li>
+<li>SMB Beacon 和 TCP Beacon</li>
+<li>外置C2 （C2就是 Command &amp; Control Server 的简称，也就是命令与控制服务器）</li>
 </ul>
-<p>闲话不多说，下面进入笔记正文部分。</p>
-<h1 id="0x02-基础概念"><a href="#0x02-基础概念" class="headerlink" title="0x02 基础概念"></a>0x02 基础概念</h1><p>要了解一个领域，就要先了解其领域内的概念范畴。CS 中的一些概念包括：</p>
-<ul>
-<li>agent<br><code>agent</code> 的本意为代理。当攻击者通过代码执行，有一个 <code>agent</code> 运行在目标网络中，就可以对目标网络进行命令与控制。所以 <code>agent</code> 实际上相当于 Beacon payload。</li>
-<li>Staging 服务器<br>在 Cobalt Strike 中，为了获取目标主机的 Beacon shell，必须先要传送 payload。payload 就是攻击执行的内容。<br>传递 payload 时候，根据目标的网络、主机环境，可以选择分阶段传递 payload，也可以不分阶段直接丢一个 payload。<br>分阶段传递中，Payload 通常被分为两部分：<code>payload stage</code> 和 <code>payload stager</code>。stager 是一个小程序，通常是手工优化的汇编指令，用于下载一个 payload stage、把它注入内存，然后对其传达执行命令。这个过程被称为 staging（分阶段）。<br>staging（分阶段）过程在一些攻击行动中是必要的。很多攻击中对于能加载进内存并在成功漏洞利用后执行的数据大小存在严格限制。这会极大地限制你的后渗透选择，除非你分阶段传送你的后渗透 payload。<br>在这里的 <code>staging server</code>，其实是指最开始用于传递 payload 的那台攻击机器。也就是获取初始权限的服务器。所以可想而知此服务器具有以下特点：<ol>
-<li>托管客户端的工具，接收来自 Beacon 的初始回复</li>
-<li>可能承担初始的权限提升和下载持久性 payload 等功能</li>
-<li>此服务器有较高暴露风险，可能会被发现、封锁和反制</li>
+</li>
 </ol>
+<h2 id="一、什么是监听器？"><a href="#一、什么是监听器？" class="headerlink" title="一、什么是监听器？"></a>一、什么是监听器？</h2><p>监听器是cobalt strike payload的一项配置</p>
+<p>一个监听器既是一个 payload 的配置信息，同时又是 Cobalt Strike 起一个服务器来接收来自这个<br>payload 的连接的指示。一个监听器由用户定义的名称、payload 类型和几个特定于 payload 的选项组<br>成。</p>
+<h2 id="二、cobalt-strike中的监听器类型"><a href="#二、cobalt-strike中的监听器类型" class="headerlink" title="二、cobalt strike中的监听器类型"></a>二、cobalt strike中的监听器类型</h2><ul>
+<li><p>egress：beacon通过网络作为出口的payload</p>
+</li>
+<li><p>peer to peer：该种监听器通过父payload进行通信，主要用于pivoting(“跳板攻击”)</p>
+</li>
+<li><p>alias：有关其他工具payload控制器的参考</p>
+<p>下表为各种类型payload的特性</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210127151745.png" alt="image-20210127151744938"></p>
 </li>
 </ul>
-<h1 id="0x03-本文要点"><a href="#0x03-本文要点" class="headerlink" title="0x03 本文要点"></a>0x03 本文要点</h1><ul>
-<li>有目标攻击的攻击链解析</li>
-<li>对 Cobalt Strike 的基本介绍</li>
-<li>多团队服务器模型</li>
-<li>分布式操作模型</li>
-<li>Cobalt Strike 的日志和报告功能</li>
-</ul>
-<h1 id="0X04-课程的基本思路"><a href="#0X04-课程的基本思路" class="headerlink" title="0X04 课程的基本思路"></a>0X04 课程的基本思路</h1><p><strong>一场典型的有目标的攻击的四个目标</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-1.jpg" alt=""></p>
-<p>其中 Cobalt Strike 侧重于 <code>后渗透阶段</code>。后渗透即为完成想要在目标网络中达到的目的的一个攻击步骤。如数据挖掘、监视用户、键盘记录、根据用户活动确定目标机会等。</p>
-<p>此攻击流程也可以用下图这个 <code>攻击链</code> 来概括：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-2.jpg" alt=""></p>
-<p>这个攻击链和 CS 手册中的章节是对应的：</p>
+<p>在菜单栏点击<code>Cobalt Strike-&gt;Listeners</code>就可以看到监听器管理页面，在这里可以添加、编辑、删除监听器等操作。添加新的监听器需要输入监听器的名称并选择相应的payload。(作者建议：监听器名称最好有足够的描述性，这样可以方便队友了解其作用以及特性)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210127151051.png" alt="image-20210127151044309"></p>
+<h2 id="三、Payload-Staging"><a href="#三、Payload-Staging" class="headerlink" title="三、Payload Staging"></a>三、Payload Staging</h2><ol>
+<li><p>什么是stager？</p>
+<p>stager 是一个小程序，通常是手工优化的汇编指令，用于下载一个payload stage，把它注入内存，然后对其传达执行命令。这个过程被称为 staging。</p>
+<p>staging过程：C2将stager发送到目标，目标会以get的方式请求C2，然后C2会返回相关payload的相应给目标。</p>
+<p>​    Metasploit与Cobalt Strike的staging协议是相同的，Metasploit的攻击可以无    缝衔接给Cobalt Strike，同样Cobalt Strike的session也可以传递给Metasploit，也可以传递给并不是自己连接到的Cobalt Strike实例中去。</p>
+<p>staging示意图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210127174655.png" alt="image-20210127174655870"></p>
+</li>
+<li><p>payload分为两种</p>
+<p>stageless类型的：没有stager的payload，直接传送payload到目标。</p>
+<p>stager类型的：将payload分阶段传送到目标中。相比stageless类型的payload而言，这种类型的不安全，容易出错，更容易被侦察到。但是在有些限制条件比较苛刻的环境中不得不用stager来分阶段传输payload。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151335.png" alt="image-20211009125650488"></p>
+</li>
+</ol>
+<p>cobalt strike3中的payload都默认使用了stager，cobalt strike4中可供选择。</p>
+<h2 id="四、HTTP-Beacon的工作原理"><a href="#四、HTTP-Beacon的工作原理" class="headerlink" title="四、HTTP Beacon的工作原理"></a>四、HTTP Beacon的工作原理</h2><p>如下图所示：左边的绿色框代表C2服务器，右边紫色框中的红点代表Beacon payload，紫色的框代表Beacon payload所在的进程。</p>
+<p>HTTP Beacon设置有一个心跳时间，默认为60秒，sleep命令可以设置睡眠时间，每次心跳时间过后目标就会跟C2服务器进行通信。</p>
+<p>每次“心跳”HTTP Beacon就会以GET请求的方式向C2发送数据，询问C2是否有需要执行的任务(图中红色线段表示)，如果没有则Beacon进入休眠，直到心跳时间过后再次请求询问，如果有需要执行的任务则C2会返回响应，返回一组加密的数据(图中未表示)，其中包含payload要执行的任务。</p>
+<p>如果payload在目标中产生输出则会以POST的请求方式传回给C2(图中黄色线段表示)，同样会以一组加密的数据进行返回(图中黄色方块表示)。只有产生输出时才会发送POST请求。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151347.png" alt="image-20210127182154841"></p>
+<h2 id="五、HTTP-Beacon监听器配置"><a href="#五、HTTP-Beacon监听器配置" class="headerlink" title="五、HTTP Beacon监听器配置"></a>五、HTTP Beacon监听器配置</h2><p>在菜单栏点击<code>Cobalt Strike-&gt;Listeners-&gt;</code>点击下方的<code>Add</code>就会弹出监听器配置对话框。</p>
+<p>在设置完监听器的名称和payload类型后，这里对HTTP Beacon的监听器的相关配置进行说明。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210131105058.png" alt="image-20210131105051344"></p>
+<p>HTTP Host需要填的就是Beacon的回连主机，回连主机可以填ipv4、ipv6的地址或者域名，一次填入多个地址可以用逗号进行分隔，ipv6的地址需要用方括号（’[]’）扩起来。按 [+] 来为 HTTP Beacon 增加一个或多个回连的主机，按 [-] 来移除一个或多个主机，按 [X] 来清除当前的主机。</p>
+<p>HTTP Host(Stager)填的是stager的主机，也可以设置默认不使用stager。</p>
+<p>HTTP port(c2)就是Beacon回连c2的端口，默认为80。</p>
+<p>HTTP Proxy是Beacon Payload的代理设置。如下图所示，在对话框的最下方有个打勾选项，打勾后会忽略代理配置，使用直接连接。这里的设置只对Beacon Payload起作用，不对stager起作用。<img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210201144223.png" alt="image-20210201144216053"></p>
+<h2 id="六、HTTPS-Beacon"><a href="#六、HTTPS-Beacon" class="headerlink" title="六、HTTPS Beacon"></a>六、HTTPS Beacon</h2><p>HTTPS Beacon除了使用SSL外，其他跟HTTP Beacon都是类似的，SSL证书可以通过Malleable C配置文件来导入，关于详细内容作者建议去看Mealleable C2的文档（<a href="https://www.cobaltstrike.com/help-malleable-c2#validssl）。" target="_blank" rel="noopener">https://www.cobaltstrike.com/help-malleable-c2#validssl）。</a></p>
+<h2 id="七、重定向（代理）"><a href="#七、重定向（代理）" class="headerlink" title="七、重定向（代理）"></a>七、重定向（代理）</h2><p>重定向器是位于目标网络与你的Cobalt Strike实例之间的服务，将目标网络流量转发到你的Cobalt Strike实例。重定向是Beacon回连到你的团队服务器所在位置的一种方法，同时也可以在渗透测试中隐藏自己的真实ip，多个重定向可以为你提供多个ip地址。</p>
+<p>下图所示r1，r2，r3为三个重定向器。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20210201155937.png" alt="image-20210201155937248"></p>
+<p>作者在此推荐了三种方法：</p>
 <ol>
-<li>操作</li>
-<li>基础设施</li>
-<li>C2</li>
-<li>武器化</li>
-<li>初始权限</li>
-<li>后渗透</li>
-<li>权限提升</li>
-<li>横向移动</li>
-<li>Pivoting<ul>
-<li>第一章操作。主要介绍了一些 CS 的基本理念和模型。</li>
-<li>第二章基础设置。主要介绍了一些监听器和重定向器的详细配置。</li>
-<li>第三章 C2。与 C2 通信的时候会面临一些权衡，因为很多行为会导致暴露，所以在和安全产品对抗的过程中，我们必须在风险和目标之间选择最适合我们的选项。另外这一章也会讲如何改变 C2 的流量特征。</li>
-<li>第四章武器化。讲如何将 payload 与在目标机器上运行的程序相匹配。</li>
-<li>第五章初始权限。目标就是获取对目标网络上运行的一个 agent 的控制。</li>
-<li>第六章后渗透、第七章权限提升、第八章横向移动、第九章 Pivoting。这些章节都是围绕着后渗透目标，讲了后渗透的流程及 CS 中的一些攻击流程和原语。</li>
-</ul>
+<li>重定向可以使用工具iptables、socat等工具将流量转发至团队服务。</li>
+</ol>
+<p>​    socat工具使用：<code>socat TCP-LISTEN:80,fork TCP4:[team server]:80</code></p>
+<p>（实操演示详见视频27:50） </p>
+<ol start="2">
+<li><p>也可以使用Apache或者Nginx的反向代理来做重定向。</p>
+</li>
+<li><p>使用CDN来做HTTPS的流量转发。</p>
 </li>
 </ol>
-<p>在此之外，规避 <code>Evasion</code> 也是一个值得讨论的话题。在本视频中，作者讲了规避的哲学：首先要明白的一个原则是：决定=风险+回报，每次在 CS 中选择的一个选项，就会产生一个行为，行为会导致一个事件 <code>event</code>，此事件会有一个行为特征，杀软或其他安全产品会根据此特征判断行为是否是恶意的。</p>
-<p>所以如何去成功规避呢？</p>
-<ul>
-<li>了解使用的工具及其行为。<br>比如需要了解 CS 的各个选项及其产生的行为特征在流量上的体现。</li>
-<li>获取和理解目标环境的防御信息。<br>比如在做免杀测试的时候，有什么测什么，而不是只看VT上过了多少家。意思就是根据对方环境的杀软体系，模拟此环境来针对性做免杀。</li>
-<li>决定要使用的最好的选项。<br>同样是规避，是一开始就减少流量特征的产生、还是说伪造流量特征让目标环境中的安全产品判定为非恶意呢。根据决定=风险+回报的原则选择适合自己目的的选项。</li>
-</ul>
-<p>然后介绍完课程的基本思路之后，就开始讲第一章 <code>Operations</code> 操作，这一章主要讲四个部分：</p>
-<ul>
-<li>对 Cobalt Strike 的基本介绍</li>
-<li>Cobalt Strike 的合作模型</li>
-<li>分布式操作模型</li>
-<li>Cobalt Strike 的日志和报告功能</li>
-</ul>
-<h1 id="0X05-第一章：操作"><a href="#0X05-第一章：操作" class="headerlink" title="0X05 第一章：操作"></a>0X05 第一章：操作</h1><h2 id="1、对-Cobalt-Strike-的基本介绍"><a href="#1、对-Cobalt-Strike-的基本介绍" class="headerlink" title="1、对 Cobalt Strike 的基本介绍"></a>1、对 Cobalt Strike 的基本介绍</h2><ul>
-<li>Cobalt Strike 出生于 2012/06</li>
-<li>Beacon agent 的功能于 2012/09 被加入</li>
-<li>Cobalt Strike 工具的使命是：缩小渗透测试工具和先进的高级威胁恶意软件之间的差距。</li>
-</ul>
-<p><strong>Cobalt Strike 的一些基本功能模块：</strong></p>
-<p>Beacon</p>
-<ul>
-<li><p>Beacon 是 Cobalt Strike 的 Payload</p>
-</li>
-<li><p>有两种通信策略（与团队服务器，CS 中以团队服务器作为 C2）</p>
-</li>
-</ul>
-<ul>
-<li>异步式通信 = 频率低、速度慢</li>
-<li>交互式通信 = C2 对 Beacon 实时控制</li>
-</ul>
-<ul>
-<li><p>使用 HTTP/S 或 DNS 来出口网络数据</p>
-</li>
-<li><p>使用 SMB 命名管道或 TCP(sockets) 来进行点对点 C2 通信</p>
-</li>
-<li><p>Beacon 是 CS 的远程管理功能模块</p>
-</li>
-</ul>
-<p>团队服务器</p>
-<p>启动命令为（必须在 Linux 主机上启动团队服务器）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;teamserver &lt;host&gt; &lt;password&gt; [&#x2F;path&#x2F;to&#x2F;c2.profile] [YYYY-MM-DD]</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>[YYYY-MM-DD]</code> 是 Beacon payloads 在此服务器上运行的杀死时间，在此时间后，Beacon payload 将停止启动。当它下一次醒来时就会离开并清空数据。这是帮助攻击人员在一次行动后清理 Beacon Payloads 的好工具。</li>
-</ul>
-<h2 id="2、Cobalt-Strike-的合作模型"><a href="#2、Cobalt-Strike-的合作模型" class="headerlink" title="2、Cobalt Strike 的合作模型"></a>2、Cobalt Strike 的合作模型</h2><p>略。（因为本部分没讲什么重要内容，都是我已知的。）</p>
-<h2 id="3、分布式操作模型（Distrubuted-Operations）"><a href="#3、分布式操作模型（Distrubuted-Operations）" class="headerlink" title="3、分布式操作模型（Distrubuted Operations）"></a>3、分布式操作模型（<code>Distrubuted Operations</code>）</h2><ul>
-<li><p>Cobalt Strike 是为分布式操作而设计的</p>
-</li>
-<li><p>客户端可以同时连接到多个团队服务器</p>
-</li>
-</ul>
-<ul>
-<li>如 <code>beacon 团队服务器</code>、<code>钓鱼团队服务器</code>、<code>侦查团队服务器</code>、<code>攻击团队服务器</code>、<code>后渗透团队服务器</code>等多个团队服务器，就是分解整个攻击链</li>
-<li>每个团队服务器有单独的数据模型和日志</li>
-</ul>
-<ul>
-<li><p>分布式操作模型可以避免行动中的单点故障/失败，如果仅有一台团队服务器，那么这一台攻击主机可能会被识别或封锁。</p>
-</li>
-<li><p>具体操作：</p>
-</li>
-</ul>
-<ul>
-<li>连接到多个团队服务器</li>
-</ul>
-<pre><code>- `Cobalt Strike` → `New Connection`</code></pre><ul>
-<li>关闭到某团队服务器的连接</li>
-</ul>
-<pre><code>- `Cobalt Strike` → `Close`</code></pre><ul>
-<li>重命名团队服务器标签页</li>
-</ul>
-<pre><code>- [标签页按钮] → `Rename`</code></pre><p>问：「在一个 CS 客户端中可以连接到多个团队服务器」这样的设计有什么好处？</p>
-<p>答：好处在于：</p>
+<p>对于CDN做重定向的建议：</p>
 <ol>
-<li>方便团队服务器之间的权限传递</li>
-<li>当连接到多个团队服务器时，Cobalt Strike 可以把所有服务器的数据合并成一个模型，获取根据时间线的事件排序，方便写报告。</li>
+<li>使用有效的SSL证书。(很多CDN都会要求)使用Beacon的有效SSL证书：<a href="https://www.cobaltstrike.com/help-malleable-c2#validssl" target="_blank" rel="noopener">Malleable Command and Control - Cobalt Strike</a></li>
+<li>确保CDN可以以POST和GET方式发送信息到团队服务器。</li>
+<li>HTTP-GET only C2（下节课介绍）</li>
+<li>禁用所有的缓存（为了确保重定向的请求到达CDN后转发到cobalt strike服务器）</li>
+<li>注意转换处理后的请求（有些CDN会对你的请求做一些处理，这会导致cs服务器与beacon之间的通信数据与你预先在Malleable C2设置的不同从而打乱cs服务器与beacon的通信，假如你使用cookie数据来进行传递任务，而亚马逊的 CloudFront(CDN)会重新排列cookie。）</li>
 </ol>
-<hr>
-<p>在这里要写一下多团队服务器模型的多种架构：</p>
-<p><strong>1、 最基本的多团队服务器模型：</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-3.jpg" alt=""></p>
-<ul>
-<li>注：蓝色闪电代表高风险</li>
-</ul>
-<p>其中，以三种团队服务器的形式来组织和分离基础设施：</p>
-<ul>
-<li>Staging 服务器</li>
-</ul>
-<ul>
-<li>获取初始权限的服务器</li>
-<li>托管客户端的工具和接收初始回复</li>
-<li>承担初始的权限提升和下载持久性程序的功能</li>
-<li>这种服务器可能具有明显的网络指标，行为事件易被检测到，可能被防御者快速发现、具有较高风险</li>
-</ul>
-<ul>
-<li>长控服务器</li>
-</ul>
-<ul>
-<li>与 Beacon 以慢速度、低频率保持通信</li>
-<li>接收持久性的回复，是重回网络的生命线</li>
-<li>可能会根据需要传递权限给后渗透服务器</li>
-<li>是具有不同流量指标的主机，也可能有不同的工具集</li>
-</ul>
-<ul>
-<li>后渗透服务器</li>
-</ul>
-<ul>
-<li>后渗透和横向移动</li>
-</ul>
-<p><strong>2、 结合攻击链的多团队服务器模型：</strong></p>
-<p>分解整个攻击链，让不同的团队服务器承担不同的攻击环节和功能：</p>
-<p>如 <code>beacon 团队服务器</code>、<code>钓鱼团队服务器</code>、<code>侦查团队服务器</code>、<code>攻击团队服务器</code>、<code>后渗透团队服务器</code>等多个团队服务器。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-4.jpg" alt=""></p>
-<ul>
-<li>注：蓝色闪电代表高风险</li>
-</ul>
-<p><strong>3、 具有权限管理单元的多团队服务器模型：</strong></p>
-<p>权限管理是一项重要的工作，也是红队应该投入的资源。</p>
-<p>除了多团队服务器来保权限的方案之外，当涉及到多个目标网络时，可以抽象出一个权限管理的单元来对多个权限做全局的管理和维持。</p>
-<p>可伸缩红队操作模型（<code>scaling red operations</code>）就是这种全局权限管理设想的实现。</p>
-<p>可伸缩红队操作模型分为两个层次，第一层是针对每一个单个的目标网络的 <code>目标单元</code>；第二层是对多个目标网络的全局管理层次 <code>权限管理单元</code>：</p>
-<ul>
-<li>目标单元</li>
-</ul>
-<ul>
-<li>负责特定的某个目标网络</li>
-<li>获取权限、后渗透、横向移动</li>
-<li>维持本地基础设施的任务</li>
-</ul>
-<ul>
-<li>权限管理单元</li>
-</ul>
-<ul>
-<li>维持所有目标网络的权限</li>
-<li>其管理的权限可能是自己获取的，也可能是从目标单元中接收的</li>
-<li>按照需求将权限传递给目标单元</li>
-<li>维持全局的基础设施，持续的接收回复（与每个权限保持心跳接收）</li>
-</ul>
-<p>根据此模型，红队中需要有以下这些团队角色：</p>
-<ul>
-<li>获取权限</li>
-</ul>
-<ul>
-<li>主要任务是：武器化的获取初始权限</li>
-<li>横向移动，获取&amp;拓展立足点</li>
-</ul>
-<ul>
-<li>后渗透</li>
-</ul>
-<ul>
-<li>主要任务是：完成想要在目标网络中达到的目的</li>
-<li>数据挖掘、监视用户、键盘记录、根据用户活动确定目标机会等</li>
-</ul>
-<ul>
-<li>本地权限管理员（单个目标网络）</li>
-</ul>
-<ul>
-<li>管理来自被控目标的回复</li>
-<li>准备基础设施</li>
-<li>持久性</li>
-<li>与全局权限管理员之间进行会话的传递和接收</li>
-</ul>
-<ul>
-<li>全局权限管理员（多目标网络的情况下）</li>
-</ul>
-<ul>
-<li>对所有 shell 进行管理和保护</li>
-<li>建立、配置长控服务器和后渗透服务器</li>
-<li>管理长控团队服务器主机，并观察其回复的健康状况</li>
-<li>将持久性和防御策略（行为安全）委托给本地权限管理员</li>
-</ul>
-<p>所以此时抽象出权限管理单元的多团队服务器模型的示意图为：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-5.jpg" alt=""></p>
-<h2 id="4、Cobalt-Strike-的日志和报告功能"><a href="#4、Cobalt-Strike-的日志和报告功能" class="headerlink" title="4、Cobalt Strike 的日志和报告功能"></a>4、Cobalt Strike 的日志和报告功能</h2><p><strong>日志：</strong></p>
-<p>Cobalt Strike 中的日志记录工具： <code>logs</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/imgcs1op-6.jpg" alt=""></p>
-<ul>
-<li>以格式化的日志形式记录了所有发生在 Cobalt Strike 团队服务器上的事件。</li>
-<li>包括击键记录、截图记录、会话内容、上传文件的哈希、beacon payload 的输出等。</li>
-</ul>
-<p><strong>报告：</strong></p>
-<ul>
-<li><p>当连接到多个团队服务器时，Cobalt Strike 可以把所有服务器的数据合并成一个模型，获取根据时间线的事件排序，可以导出一份综合的报告。</p>
+<p>为了避免出错可以设置Mealleable C2配置文件使得HTTP GET既可以下载任务，也可以将数据发送回Cobalt Strike。</p>
+<h2 id="八、域前端技术"><a href="#八、域前端技术" class="headerlink" title="八、域前端技术"></a>八、域前端技术</h2><p>Domain Fronting翻译作域前端或者域前置，是一种隐藏C2真实地址的技术，可用来绕过安全设备的检测。首先要了解CDN的原理：客户端向发出的请求首先经过CDN服务器，CDN服务器检查自己本地是否有客户端的请求内容，如果有直接从CDN服务器返回给客户，如果没有则向客户源服务器进行请求，并将请求的返回结果添加到自己的缓存中。将CDN作为代理最好关闭CDN的缓存功能，使得每次请求都能到达源服务器。</p>
+<p><strong>先来谈谈普通的CDN做代理技术</strong></p>
+<p>CDN服务商为自己的客户提供服务，这其中就有很多比较知名的、信誉良好的一些客户，或者说信誉良好的一些域名。我们的C2服务器也是CDN的客户服务器之一。正常情况下，客户的请求先发送到CDN服务器，CDN服务器本地没有缓存的时候就转发给对应的客户源服务器。下图所示的三个请求中，请求域名“O”的请求被转发到“O”的源服务器，请求域名“T”的请求被转发到“T”的源服务器，请求C2的请求被转发到C2服务器。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151411.png" alt="image-20210615151308141"></p>
+<p>利用CDN做代理的好处就是我们的C2服务器和其他CDN客户所使用的ip都是CDN服务商统一提供的，一般不会被认定为是恶意ip。</p>
+<p>域前端的思想：客户端向域名T发送的请求到达CDN后，CDN并不会转发到T客户服务器，而是发给了C2服务器。（如下图所示）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151422.png" alt="image-20210615152656940"></p>
+<p>这在外部看来就是客户端在跟“T”进行正常通信，但实际上，是在和C2服务器通信，但使用的却是一个良好信誉的域名“T”，“T”在这里的作用就像是你的重定向服务器。</p>
+<p>原理：域前端的核心思想是在不同的通信层使用不同的域名。客户端发出一个请求，请求X域名，首先做DNS解析，得到的是CDN的IP地址，然后客户端根据解析到的IP访问到CDN，当请求到达CDN后，CDN并不关心你在访问到他之前请求DNS解析的是哪个域名，他只知道他收到了一个请求，你与他建立了TCP连接，这个连接经过CDN解析后才会知道他（CDN服务器）需要返回哪些缓存或者去请求哪个源服务器。所以问题的关键就在于CDN是如何从请求中进行解析获取客户要访问的源服务器呢？HTTP/HTTPS请求头中都会有HOST字段，CDN收到请求后就根据HOST的值来确定要返回的资源来自哪个源服务器。而Beacon的请求就可以自定义指定HOST的值，这样就可以将看似走向其他域名的请求转最终到达C2服务器。如下图，客户端请求的是T，但是HOST的值为C2，CDN收到后请求的是C2的资源。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151436.png" alt="image-20210615160920955"></p>
+<p><strong>域前端技术的防范与突破</strong></p>
+<p>如果客户端与CDN之间存在代理服务器（下图中的P），那么客户端发送到CDN的请求数据在代理服务器那里是完全透明可见的，代理服务器会检测到客户端发出的HTTP请求中请求的是T，但是HOST的值却是C2，这时候代理服务器可能就会去修改HOST的值，将C2改为T。然后，当请求到达CDN后，CDN请求的就是源服务器T了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151454.png" alt="image-20210615161617303"></p>
+<p>当客户端以HTTPS的方式发出请求时，代理服务器一般只是作为中转的作用，因为客户端发出的请求包是加密的，代理服务器并不知道请求包的内容。这时候请求通过代理服务器后被发送到CDN，CDN检测到HOST的值是C2，所以会向C2进行请求（如下图）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151500.png" alt="image-20210615162538664"></p>
+<p>但是在有些设备会解密获取到HTTPS包的内容，这样就会跟上面所说的HTTP的情况相同。但是一般不会对所有的目标都进行数据包的检测，比如一些值得信赖的域名，像金融或者医疗保健行业的请求数据包，此类数据包中可能包含金融账户密码或者医疗保健信息。所以对于一些特定的域名可能会被放行，这点就可以作为突破口。</p>
+<p><strong>CDN对域前端防范</strong></p>
+<p>对于域前端技术，CDN提供商也做了相应的措施，有些CDN会检测HTTPS请求包的SNI的值。</p>
+<p>先来了解一下SNI，SNI的全称是Server Name Indication，他是用来改善服务器与客户端 SSL (Secure Socket Layer)和 TLS (Transport Layer Security) 的一个扩展。他的作用是支持一台服务器上可以为多个域名提供服，也就是允许多个DNS主机名由同一IP地址上的单个服务器（通常为Web服务器）托管。<br>SNI介绍：<a href="https://www.jianshu.com/p/119e5fc204eb" target="_blank" rel="noopener">SNI协议分析 - 简书 (jianshu.com)</a></p>
+<p><a href="https://blog.csdn.net/makenothing/article/details/53292335" target="_blank" rel="noopener">SNI(Server Name Indication)_浴血重生-学习空间-CSDN博客</a></p>
+<p>在客户端连接CDN之前，客户端在DNS请求中使用的是无害的值得信赖的域名来进行访问，在HTTPS包中SNI的值也是使用该域名，虽然可能代理服务器只知道SNI的值而不知道HOST的值，在他看来这个请求是正常的，但是CDN会检测SNI的值以此作为确定寻找源服务器的依据，当CDN服务器检测到SNI的值与HOST的值不同时，他会修改HOST的值。如下图，原本的数据包SNI的值为T，HOST的值为c2，CDN将其改为T。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151511.png" alt="image-20210617111027011"></p>
+<p>在cobalt strike4以后使用域前端时，在建立cobaltstrike监听器时可以为stager设置HTTP Host Header（下图中HTTP Host Header字段），这样设置后beacon跟C2发送的数据包中Host Header都会使用设置的值。下图为cobaltstrike4.0的监听器配置信息。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151521.png" alt="image-20211202203857807"></p>
+<h2 id="九、Cobalt-Strike-的整合"><a href="#九、Cobalt-Strike-的整合" class="headerlink" title="九、Cobalt Strike 的整合"></a>九、Cobalt Strike 的整合</h2><p>在之前的cobalt strike版本中，建立的监听器只能有一种类型的，比如建立了一个普通的HTTP监听器，再建立一个另一种流量特征的监听器比如GET-only（beacon请求和返回数据只使用GET方式传送数据）则需要在一个新的C2服务器上建立，而在cobalt strike4中可以将不同类型的监听器全部整合在一个C2服务器上。</p>
+<p>下图为cobalt strike3.x的http监听器建立</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151531.png" alt="image-20211202210054583"></p>
+<p>cobalt strike4之后可以建立多个不同特征和类型的监听器，可以在beacon和C2服务器直接做一个重定向的代理服务器，将流量转发到C2的指定端口，还可以使用cobalt strike4中新增的”variants”文件来为每个监听器定制不同的流量特征。（有关variants文件的相关介绍在第三节课）</p>
+<p>Variants文件介绍：<a href="https://fortynorthsecurity.com/blog/cobalt-strike-variants/" target="_blank" rel="noopener">Cobalt Strike 4.0 - Variants (fortynorthsecurity.com)</a></p>
+<p>下图为cobalt strike4.0的http监听器和tcp监听器建立</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151536.png" alt="image-20211202200618192"></p>
+<h2 id="十、DNS-Beacon"><a href="#十、DNS-Beacon" class="headerlink" title="十、DNS Beacon"></a>十、DNS Beacon</h2><p>DNS beacon是使用DNS协议进行DNS查询来与C2在internet上通信的一种beacon。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151545.png" alt="image-20211202210131458"></p>
+<p>原理：</p>
+<p>如上图所示，目标主机中的beacon发出对域名1234.profiles.losenolove.com的DNS查询。</p>
+<ol>
+<li><p>第一步：目标主机对Local DNS Server（本地DNS服务器）发起查询，询问是否知道1234.profiles.losenolove.com对应的ip，Local DNS Server并不知道，此时Local DNS Server会进行迭代查询。</p>
 </li>
-<li><p>主要的一些可以导出的报告类型为；</p>
+<li><p>第二步：当Local DNS Server本地缓存中没有1234.profiles.losenolove.com的DNS解析信息时他会请求Root Sever，询问Root Sever是否知道1234.profiles.losenolove.com对应的ip地址，而Root Sever并不不知道，但是他会返回.com域名服务器的地址，让Local DNS Server去在.com服务器进行查找。</p>
+</li>
+<li><p>第三步：Local DNS Server对.com服务器进行询问，同理，.com返回的是losenolove.com的地址。</p>
+</li>
+<li><p>第四步：Local DNS Server对losenolove.com进行查询，同理，losenolove.com返回了profiles.losenolove.com的地址，让Local DNS Server去找profiles.losenolove.com进行查询，而profiles.losenolove.com对应的IP正是C2的地址。</p>
+</li>
+<li><p>第五步：Local DNS Server对profiles.losenolove.com（即C2服务器）进行查询，C2服务器收到查询的域名1234.profiles.losenolove.com解析1234的含义，如果有任务进行执行，则返回相应的数据给Local DNS Server，Local DNS Server收到响应后将对应的查询结果数据返回给目标主机，DNS beacon将解析返回的数据并执行相应的任务。如果没有需要执行的任务，则profiles.losenolove.com（即C2服务器）会返回一个提前设定好的值，如0.0.0.0。</p>
+</li>
+</ol>
+<p>下图为DNS监听器的配置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151553.png" alt="image-20211202212900757"></p>
+<p>在之前版本的DNS beacon的通信中，每隔心跳时间后DNS beacon会以DNS查询的方式与C2进行通信，询问是否有任务执行，如果有会返回相应的数据，如ip地址，此时beacon会发出HTTP请求去下载执行任务，作者说这样做的原因是在没有任务要执行的时候减少不必要的http通信来隐藏beacon。但是如果防火墙设置了DNS可以通过HTTP无法通过时就会遇到虽然有beacon，但是却无法下发任务去执行的处境。因此在Cobalt Strike4.0之后添加了DNS协议数据的通信，而不再使用DNS和HTTP混合的模式，默认使用dns-txt。</p>
+<p>可以使用mode命令来更改通信信道：</p>
+<ul>
+<li><p>mode dns 是 DNS A 记录数据通道； </p>
+</li>
+<li><p>mode dns6 是 DNS AAAA 记录数据通道； </p>
+</li>
+<li><p>mode dns-txt 是 DNS TXT 记录数据通道。DNS TXT 记录是默认的数据通道。</p>
 </li>
 </ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151559.png" alt="image-20211202215031890"></p>
+<p><strong>DNS beacon的配置</strong></p>
+<p>DNS beacon建立的目标是使C2服务器成为对应域名或子域名的权威域名服务器，让C2服务器去解析该子域名。即C2为域名解析服务器。</p>
+<p>创建一个 DNS A记录然后指向你的Cobalt Strike团队服务器使用 DNS NS记录来将多个域名或子域名委派到你的Cobalt Strike团队服务器的A记录。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151607.png" alt="image-20211202220604011"></p>
+<p>使用nslookup来检测是否设置成功，如果你得到了一个 0.0.0.0 （默认返回值，可修改）的 A 记录回复说明你的DNS配置是对的。如果你没有得到回复，那说明你的 DNS 配置不对。</p>
+<h2 id="十一、SMB-Beacon"><a href="#十一、SMB-Beacon" class="headerlink" title="十一、SMB Beacon"></a>十一、SMB Beacon</h2><p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151709.png" alt="image-20211203131817635"></p>
+<p>SMB beacon是使用windows命名管道（Named Pipes）进行通信的一种payload，通过父beacon来跟C2通信。因为命名管道使用SMB协议来传输流量因此称为SMB beacon。</p>
+<p><strong>断开与重连</strong></p>
+<p>SMB beacon可以在不必要通信的时候断开连接状态，即SMB beacon与他的父beacon断开连接进入待连接状态，在需要使用的时候再次恢复连接即可。</p>
+<p>连接到一个SMB beacon：<code>link [host] [pipe]</code> #第二个参数管道名称可以使用Tab键补齐。</p>
+<p>断开一个SMB beacon：<code>unink  [host] [pid]</code></p>
+<p>连接时候错误代码：</p>
 <ul>
-<li>IoC 指标报告（类似于一些 APT 报告）。</li>
-<li>活动报告。有一个基于时间表的活动，讲述了 <code>when</code>、<code>where</code>、<code>why</code>。</li>
-<li>会话报告。按主机单独组织</li>
-<li>TTP 报告。基于 MITRE 框架下的 CS 活动（策略+事件+缓解+监测）</li>
+<li>2 ：文件未找到，即没有找到要连接的这个beacon。</li>
+<li>5： 没有权限连接到这个beacon，即没有权限访问该命名管道。</li>
+<li>53： 与目标系统没有建立信任关系，无法与目标主机进行通信。</li>
 </ul>
-<hr>
-<p>参考文档：</p>
-<p>[1] <a href="https://www.youtube.com/watch?v=q7VQeK533zI&list=PL9HO6M_MU2nfQ4kHSCzAQMqxQxH47d1no" target="_blank" rel="noopener">Youtube 视频 - Red Team Ops with Cobalt Strike (1 of 9): Operations</a>，Youtube，Raphael Mudge<br>[2] <a href="https://www.bilibili.com/video/av85159864" target="_blank" rel="noopener">B 站视频 - 渗透测试 Cobalt_Strike 4中英双字</a>，Bilibili，喵的起名<br>[3] <a href="https://www.cobaltstrike.com/downloads/csmanual40.pdf" target="_blank" rel="noopener">Cobalt Strike mannual 4.0</a>，Cobalt Strike 官网</p>
-<blockquote>
-<p><a href="http://blog.leanote.com/post/snowming/62ec1132a2c9" target="_blank" rel="noopener">原文地址 http://blog.leanote.com/post/snowming/62ec1132a2c9 </a></p>
-</blockquote>
+<p>Cobalt Strike的Pivo Graph视图模式可以清楚的看到当前SMB beacon与父benacon之间的连接关系。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151718.png" alt="image-20211203134213706"></p>
+<h2 id="十二、TCP-Beacon"><a href="#十二、TCP-Beacon" class="headerlink" title="十二、TCP Beacon"></a>十二、TCP Beacon</h2><p>TCP beacon与SMB beacon类似，都是通过父beacon来与C2服务器进行通信。TCP beacon使用TCP socket来通信。</p>
+<p>同样可以断开来连接和重新连接：</p>
+<ul>
+<li><p>连接到TCP beacon：<code>connect [host] [port]</code> # 也可以使用Tab键补齐</p>
+</li>
+<li><p>断开连接：<code>unlink [host] [pid]</code></p>
+</li>
+</ul>
+<h2 id="十三、外置C2（External-C2）"><a href="#十三、外置C2（External-C2）" class="headerlink" title="十三、外置C2（External C2）"></a>十三、外置C2（External C2）</h2><p>外置 C2 是一种规范，允许第三方程序充当Cobalt Strike的Beacon payload 的通信层。这些第三方程序连接到Cobalt Strike来阅读预定使用的帧，并使用以此种方式控制的payload的输出写帧。这些第三方程序使用外置C2服务器来与你的 Cobalt Strike 团队服务器交互。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151733.png" alt="image-20211204133859954"></p>
+<p>上图为External C2的数据流图，左上角和右下角黄色块的分别为cobalt strike的服务端和目标系统的SMB beacon，在这两者直接的两个绿色块就是第三方程序或者控制工具。也就是说，在cobalt strike的通信层使用第三方的工具或程序来实现。</p>
+<p>不同于其他类型的监听器，外部C2监听器只是监听指定的端口，并与第三方程序服务端或接口进行通信。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cluren/imgHosting/img/20211204151802.png" alt="image-20211204140635240"></p>
+<p>官方介绍：<a href="https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/listener-infrastructue_external-c2.htm#_Toc65482746" target="_blank" rel="noopener">External C2 (helpsystems.com)</a></p>
+<p>案       例：</p>
+<ul>
+<li><a href="https://labs.f-secure.com/archive/tasking-office-365-for-cobalt-strike-c2/" target="_blank" rel="noopener">“Tasking” Office 365 for Cobalt Strike C2 (f-secure.com)</a></li>
+<li><a href="https://github.com/FSecureLABS/C3" target="_blank" rel="noopener">FSecureLABS/C3: Custom Command and Control (C3). A framework for rapid prototyping of custom C2 channels, while still providing integration with existing offensive toolkits. (github.com)</a></li>
+</ul>
+<p>视频演示：<a href="https://www.youtube.com/watch?v=7FqCDWRMm4A" target="_blank" rel="noopener">External C2 (Cobalt Strike 4.0) - YouTube</a></p>
+<h2 id="相关参考"><a href="#相关参考" class="headerlink" title="相关参考"></a>相关参考</h2><ol>
+<li><p><a href="https://www.youtube.com/watch?v=5gwEMocFkc0&t=1745s" target="_blank" rel="noopener">Red Team Ops with Cobalt Strike (2 of 9): Infrastructure - YouTube</a></p>
+</li>
+<li><p><a href="https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/welcome_main.htm" target="_blank" rel="noopener">Welcome to Cobalt Strike (helpsystems.com)</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/makenothing/article/details/53292335" target="_blank" rel="noopener">SNI(Server Name Indication)_浴血重生-学习空间-CSDN博客</a></p>
+</li>
+<li><p><a href="http://www.manongjc.com/article/103877.html" target="_blank" rel="noopener">Cobalt Strike的高使用率重定向器和域前端 - 码农教程 (manongjc.com)</a></p>
+</li>
+<li><p><a href="https://www.bamsoftware.com/papers/fronting/" target="_blank" rel="noopener">Blocking-resistant communication through domain fronting (bamsoftware.com)</a></p>
+</li>
+<li><p><a href="https://blog.cobaltstrike.com/2014/01/14/cloud-based-redirectors-for-distributed-hacking/" target="_blank" rel="noopener">Cloud-based Redirectors for Distributed Hacking - Cobalt Strike Research and Development</a></p>
+</li>
+<li><p><a href="https://fortynorthsecurity.com/blog/cobalt-strike-variants/" target="_blank" rel="noopener">Cobalt Strike 4.0 - Variants (fortynorthsecurity.com)</a></p>
+</li>
+<li><p><a href="https://www.anquanke.com/post/id/190207#h2-0https://rcoil.me/2019/11/[知识回顾]命名管道/" target="_blank" rel="noopener">Windows 命名管道研究初探 - 安全客，安全资讯平台 (anquanke.com)</a></p>
+</li>
+<li><p>Cobalt Strike 4.0 手册（奇安信A-Team翻译版）</p>
+</li>
+</ol>
 
     </article>
     <!-- license -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://cluren.github.io">cluren</a>
+            <p>原文链接：<a href="https://cluren.github.io/2021/12/04/cobalt%20strike2-Infrastructure/">https://cluren.github.io/2021/12/04/cobalt%20strike2-Infrastructure/</a>
+            <p>发表日期：<a href="https://cluren.github.io/2021/12/04/cobalt%20strike2-Infrastructure/">December 4th 2021, 3:34:33 pm</a>
+            <p>更新日期：<a href="https://cluren.github.io/2021/12/04/cobalt%20strike2-Infrastructure/">December 4th 2021, 3:44:19 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator -->
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2020/02/27/siyecaoqihangkaohe/" title="四叶草启航班考核CTF记录">
-                    <div class="nextTitle">四叶草启航班考核CTF记录</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2020/02/19/docker-1/" title="Docker快速入门">
-                    <div class="prevTitle">Docker快速入门</div>
+                <a href="/2021/11/16/Frida%E5%88%9D%E4%BD%93%E9%AA%8C-Frida%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="Frida初体验-Frida的使用学习">
+                    <div class="prevTitle">Frida初体验-Frida的使用学习</div>
                 </a>
             
         </li>
@@ -932,7 +901,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#0x01-前言"><span class="toc-number">1.</span> <span class="toc-text">0x01 前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0x02-基础概念"><span class="toc-number">2.</span> <span class="toc-text">0x02 基础概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0x03-本文要点"><span class="toc-number">3.</span> <span class="toc-text">0x03 本文要点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0X04-课程的基本思路"><span class="toc-number">4.</span> <span class="toc-text">0X04 课程的基本思路</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0X05-第一章：操作"><span class="toc-number">5.</span> <span class="toc-text">0X05 第一章：操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、对-Cobalt-Strike-的基本介绍"><span class="toc-number">5.1.</span> <span class="toc-text">1、对 Cobalt Strike 的基本介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、Cobalt-Strike-的合作模型"><span class="toc-number">5.2.</span> <span class="toc-text">2、Cobalt Strike 的合作模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、分布式操作模型（Distrubuted-Operations）"><span class="toc-number">5.3.</span> <span class="toc-text">3、分布式操作模型（Distrubuted Operations）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、Cobalt-Strike-的日志和报告功能"><span class="toc-number">5.4.</span> <span class="toc-text">4、Cobalt Strike 的日志和报告功能</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#本节概要"><span class="toc-number">1.</span> <span class="toc-text">本节概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一、什么是监听器？"><span class="toc-number">2.</span> <span class="toc-text">一、什么是监听器？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、cobalt-strike中的监听器类型"><span class="toc-number">3.</span> <span class="toc-text">二、cobalt strike中的监听器类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、Payload-Staging"><span class="toc-number">4.</span> <span class="toc-text">三、Payload Staging</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、HTTP-Beacon的工作原理"><span class="toc-number">5.</span> <span class="toc-text">四、HTTP Beacon的工作原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、HTTP-Beacon监听器配置"><span class="toc-number">6.</span> <span class="toc-text">五、HTTP Beacon监听器配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、HTTPS-Beacon"><span class="toc-number">7.</span> <span class="toc-text">六、HTTPS Beacon</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七、重定向（代理）"><span class="toc-number">8.</span> <span class="toc-text">七、重定向（代理）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八、域前端技术"><span class="toc-number">9.</span> <span class="toc-text">八、域前端技术</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#九、Cobalt-Strike-的整合"><span class="toc-number">10.</span> <span class="toc-text">九、Cobalt Strike 的整合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十、DNS-Beacon"><span class="toc-number">11.</span> <span class="toc-text">十、DNS Beacon</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十一、SMB-Beacon"><span class="toc-number">12.</span> <span class="toc-text">十一、SMB Beacon</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十二、TCP-Beacon"><span class="toc-number">13.</span> <span class="toc-text">十二、TCP Beacon</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十三、外置C2（External-C2）"><span class="toc-number">14.</span> <span class="toc-text">十三、外置C2（External C2）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相关参考"><span class="toc-number">15.</span> <span class="toc-text">相关参考</span></a></li></ol>
             </div>
         
         <!-- sidebar -->
